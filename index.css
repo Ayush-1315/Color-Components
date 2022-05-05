@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+.start{
+    width:100%; 
+    height:40vh;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color:white;
+}
+.second{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.contain{
+    display: grid;
+    /* background-color: red; */
+    height:100vh;
+    width:100vw;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'cont cont cont cont cont cont'
+    'foot foot foot foot foot foot';
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size:var(--side-panel-font);
+}
+.land-count{
+    color:white;
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background-color: rgb(14, 128, 130);
+    text-align:center;
+    padding:4px;
+    border-radius: 50%;
+    font-size:2rem;
+    filter:drop-shadow(0px 0px 1rem white);
+}
+.landing{
+    padding:0 !important;
+    height: 100vh !important;
+    background-image: linear-gradient(rgb(91, 90, 90),rgb(75, 41, 41));
+
+}
+#intro-start{
+    color:white;
+    position: relative;
+    bottom: -100px;
+    font-size:15rem;
+    transition:all 1s;
+    animation: start-gear 2s ease-in-out 0s infinite backwards ;
+    filter:drop-shadow(0px 0px 0.75rem yellow);
+}
+#intro-start-back{
+    color:white;
+    position: relative;
+    bottom: -65px;
+    font-size:15rem;
+    transition:all 1s;
+    filter:drop-shadow(0px 0px 0.75rem red);
+    left:-25px;
+    animation: start-gear-back 2s ease-in-out 0s infinite backwards ;
+}
+#land-name{
+    font-family:var(--font-nave);
+    font-family: 'Major Mono Display', monospace;
+    text-shadow: 3px 3px 1px rgba(255,255,255);
+    color:white;
+    font-size: 5rem;
+    transition: all 0.8s;
+    width:100%;
+    display:block;
+}
+#start-one{
+    width:50vw;
+    text-align: center;
+    padding:35px;
+}
+#start-two{
+    width:50vw;
+    text-align: center;
+    padding:35px;
+}
+.land-code{
+    width: 40% !important;
+    height:35vh !important;
+}
+@media (min-width:280px) and (max-width:320px){
+    .land-code{
+        width: 90% !important;
+        height:30vh !important;
+    }
+}
+@media (min-width: 481px) and (max-width: 1024px)
+{
+.landing {
+    width: 100vw !important;
+}
+}
+@keyframes start-gear {
+0%{
+    transform: rotateZ(180deg);
+}
+50%{
+    transform: rotateZ(-180deg);
+}
+    
+}
+@keyframes start-gear-back {
+0%{
+    transform: rotateZ(-180deg);
+}
+50%{
+    transform: rotateZ(180deg);
+}
+    
+}
