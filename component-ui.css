@@ -16,7 +16,7 @@
 @import "../CSS/modal.css";
 @import "../CSS/navbar.css";
 @import "../CSS/forms.css";
-@import "../CSS/index.css";
+@import "index.css";
 
 
 *{
