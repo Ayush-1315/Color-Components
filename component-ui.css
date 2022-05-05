@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik+Microbe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
-@import "CSS/images.css";
-@import "CSS/avatars.css";
-@import "CSS/audio.css";
+@import "images.css";
+@import "avatars.css";
+@import "audio.css";
 @import "snackbar.css";
 @import "buttons.css";
 @import "alert.css";
