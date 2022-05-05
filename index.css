@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+.start{
+    width:100%; 
+    height:30vh;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color:white;
+}
+.second{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.contain{
+    display: grid;
+    /* background-color: red; */
+    height:100vh;
+    width:100vw;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'cont cont cont cont cont cont'
+    'foot foot foot foot foot foot';
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size:var(--side-panel-font);
+}
+.land-count{
+    color:white;
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background-color: rgb(14, 128, 130);
+    text-align:center;
+    padding:4px;
+    border-radius: 50%;
+    font-size:2rem;
+    filter:drop-shadow(0px 2px 1rem black);
+}
+.landing{
+    padding:0 !important;
+    height: fit-content !important;
+    background-image: linear-gradient(#0d324d, #7f5a83);
+    background-color: #2876f9;
+background-image: linear-gradient(45deg, #2876f9 0%, #6d17cb 74%);
+
+
+}
+#intro-start{
+    color:white;
+    position: relative;
+    bottom: -100px;
+    font-size:15rem;
+    transition:all 1s;
+    animation: start-gear 2s ease-in-out 0s infinite backwards ;
+    filter:drop-shadow(0px 0px 0.75rem yellow);
+}
+#intro-start-back{
+    color:white;
+    position: relative;
+    bottom: -65px;
+    font-size:15rem;
+    transition:all 1s;
+    filter:drop-shadow(0px 0px 0.75rem red);
+    left:-25px;
+    animation: start-gear-back 2s ease-in-out 0s infinite backwards ;
+}
+#land-name{
+    font-family:var(--font-nave);
+    font-family: 'Major Mono Display', monospace;
+
+
+    color:white;
+    font-size: 5rem;
+    transition: all 0.8s;
+    width:100%;
+    display:block;
+}
+#start-one{
+    width:100vw;
+    text-align: center;
+    padding:35px;
+}
+#start-two{
+    width:25vw;
+    text-align: center;
+    padding:0;
+    /* position: sticky;
+    left:2000px;
+    bottom: 90px; */
+    z-index: 3;
+    transform: translate(65rem,-10rem);
+}
+.install-ex{
+    width:100%;
+}
+.land-code{
+    width: 60% !important;
+    height:20vh !important;
+}
+#get-started a{
+    color:black;
+    background-color: rgb(27, 231, 177);
+    color:white;
+    border-radius: 10px;
+    filter:drop-shadow(0px 0px 1rem rgb(0, 140, 117));
+    display: inline-block;
+    padding:0.5rem;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+@media (min-width:280px) and (max-width:320px){
+    .land-code{
+        width: 90% !important;
+        height:25vh !important;
+    }
+    .second,#start-one{
+        font-size:1.5rem;
+    }
+    #land-name{
+        font-size:3rem;
+    }
+    .land-count{
+        height:30px!important;width:30px !important;
+        font-size: 1.6rem;
+    }
+    #intro-start,#intro-start-back{
+        font-size:6rem;
+    }
+    #intro-start{
+        bottom:-85px;
+    }
+    #start-two{
+        transform: translate(10rem,-7rem);
+    }
+}
+@media (min-width: 321px) and (max-width:480px){
+    #intro-start,#intro-start-back{
+        font-size:6rem;
+    }
+    #intro-start{
+        bottom:-85px;
+    }
+    #start-two{
+        transform: translate(14rem,-7rem);
+    }
+}
+@media (min-width: 481px) and (max-width: 512px)
+{
+.landing {
+    width: 100vw !important;
+}
+#start-two{
+    transform: translate(14rem,-7rem);
+}
+#intro-start,#intro-start-back{
+    font-size:6rem;
+}
+}
+@media (min-width: 513px) and (max-width: 768px)
+{
+.landing {
+    width: 100vw !important;
+    
+}
+
+#start-two{
+    transform: translate(18rem,-7rem);
+}
+#intro-start,#intro-start-back{
+    font-size:10rem;
+}
+#intro-start{
+    bottom:-78px;
+}
+}
+/* @media (min-width: 481px) and (max-width: 768px){
+    .second{
+        font-size:3rem !important;
+    }
+    #start-two{
+        transform: translate(14rem,-7rem);
+    }
+} */
+@media (min-width:769px) and (max-width:1024px){
+    #start-two{
+        transform: translate(19rem,-7rem);
+    }
+    
+}
+@keyframes start-gear {
+0%{
+    transform: rotateZ(180deg);
+}
+50%{
+    transform: rotateZ(-180deg);
+}
+    
+}
+@keyframes start-gear-back {
+0%{
+    transform: rotateZ(-180deg);
+}
+50%{
+    transform: rotateZ(180deg);
+}
+    
+}
