@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Audio Component</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #audio {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span  onclick="mainSide()"id="menu-toggle"><i class="fas fa-bars" ></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont" id="page-cont">
+            <span class="heading">Audio Player</span>
+            <p class="component-description">
+                Nowadays music is so popular among youth. So this component allows you to add music player to your
+                web page and can also be used in small projects.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Music Player -->
+                    <div class="player-1">
+                        <div id="poster">
+                            <img src="" alt="image" id="Poster">
+                            <section id="info">
+                                <p id="Title">Title</p>
+                                <p id="Artist">Artist</p>
+                            </section>
+                        </div>
+                        <div id="controls">
+                            <input type="range" min="0" max="100" value="20" id="seeker" onchange="change_duration()">
+                            <div id="audio-dur">
+                                <p id="duration-time" onload="dur()"><span id="start-min">0</span><span>:</span><span
+                                        id="start-sec">00</span></p>
+                                <p id="track">
+                                    <span id="current_track"></span>/ <span id="total_song"></span>
+                                </p>
+                                <p id="duration-time"><span id="dur-min">0</span><span>:</span><span
+                                        id="dur-sec">00</span></p>
+                            </div>
+                            <div id="control_buttons">
+                                <button id="prev" onclick="previous_song()" class="buttons"><i
+                                        class="fa-solid fa-backward-step"></i> </button>
+                                <button id="play-pause" onclick="play()" class="buttons"><i
+                                        class="fa-solid fa-play"></i></button>
+                                <button id="next" onclick="next_song()" class="buttons"><i
+                                        class="fa-solid fa-forward-step"></i>
+                                </button>
+                            </div>
+                            <div class="playback">
+                                <div id="V_controls">
+                                    <button id="volume" class="buttons" onclick="mute_sound()"><i
+                                            class="fa-solid fa-volume-high"></i></button>
+                                    <p id="volume_value">80</p>
+
+                                </div>
+                                <input type="range" id="volume_seeker" onchange="volume_change()" min="0" max="100"
+                                    value="80">
+                                <button id="auto_play" onclick="autoplay()" class="buttons"><i
+                                        class="fa-solid fa-arrow-rotate-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <select name="select-component" id="component-select" onchange="showDiv(this)">
+                    <option value="0">Music Player</option>
+                </select>
+            </div>
+            <p class="component-description">
+                <!-- Music Player -->
+                <span id="Music-player">
+                   
+                </span>
+            </p>
+            <span class="Code-title">HTML Code</span>
+            <div class="code" id="audio-code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Music Player -->
+                    <span id="Music-player-code">
+                        &lt;div class="player-1"&gt;<br>
+                        &lt;div id="poster"&gt;<br>
+                        &lt;img src="" alt="image" id="Poster"&gt;<br>
+                        &lt;section id="info"&gt;<br>
+                        &lt;p id="Title">Title&lt;/p&gt;<br>
+                        &lt;p id="Artist">Artist&lt;/p&gt;<br>
+                        &lt;/section&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;div id="controls"&gt;<br>
+                        &lt;input type="range" min="0" max="100" value="20" id="seeker"
+                        onchange="change_duration()"&gt;<br>
+                        &lt;div id="audio-dur"&gt;<br>
+                        &lt;p id="duration-time" onload="dur()"&gt;<br>
+                        &lt;span id="start-min"&gt;0&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;span
+                        id="start-sec"&gt;00&lt;/span&gt;<br>
+                        &lt;/p&gt;<br>
+                        &lt;p id="track"&gt;<br>
+                        &lt;span id="current_track"&gt;&lt;/span&gt;/ &lt;span id="total_song"&gt;&lt;/span&gt;<br>
+                        &lt;/p&gt;
+                        &lt;p id="duration-time"&gt;&lt;span
+                        id="dur-min"&gt;0&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;span
+                        id="dur-sec"&gt;00&lt;/span&gt;<br>
+                        &lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;div id="control_buttons"&gt;<br>
+                        &lt;button id="prev" onclick="previous_song()" class="buttons"&gt;&lt;i
+                        class="fa-solid fa-backward-step"&gt;&lt;/i&gt; &lt;/button&gt;<br>
+                        &lt;button id="play-pause" onclick="play()" class="buttons"&gt;&lt;i
+                        class="fa-solid fa-play"&gt;&lt;/i&gt;&lt;/button&gt;<br>
+                        &lt;button id="next" onclick="next_song()" class="buttons"&gt;&lt;i
+                        class="fa-solid fa-forward-step"&gt;&lt;/i&gt;
+                        &lt;/button&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;div class="playback"&gt;<br>
+                        &lt;div id="V_controls"&gt;<br>
+                        &lt;button id="volume" class="buttons" onclick="mute_sound()"&gt;&lt;i
+                        class="fa-solid fa-volume-high"&gt;&lt;/i&gt;&lt;/button&gt;<br>
+                        &lt;p id="volume_value"&gt;80&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;input type="range" id="volume_seeker" onchange="volume_change()" min="0" max="100"
+                        value="80"&gt;<br>
+                        &lt;button id="auto_play" onclick="autoplay()" class="buttons"&gt;&lt;i
+                        class="fa-solid fa-arrow-rotate-right"&gt;&lt;/i&gt;
+                        &lt;/button&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+            <span class="Code-title">JavaScript Code</span>
+            <div class="JS-code" id="audio-JS-code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-JS-code">
+                    <!-- Music Player -->
+                    <span id="Music-player-code">
+                        var previous=document.getElementById("prev");<br>
+                        var play_Song=document.getElementById("play-pause");<br>
+                        var next=document.getElementById("next");<br>
+                        var Title=document.getElementById("Title");<br>
+                        var recent_volume=document.getElementById("volume_seeker");<br>
+                        var volume_value=document.getElementById("volume_value");<br>
+                        var seeker=document.getElementById("seeker");<br>
+                        var track_image=document.getElementById("Poster");<br>
+                        var auto_play=document.getElementById("auto_play");<br>
+                        var artist=document.getElementById("Artist");<br>
+                        var now_playing=document.getElementById("current_track");<br>
+                        var songs_list=document.getElementById("total_song");<br>
+                        var volume=document.getElementById("volume");<br>
+                        var start_min=document.getElementById("start-min");<br>
+                        var start_sec=document.getElementById("start-sec");<br>
+                        var dur_min=document.getElementById("dur-min");<br>
+                        var dur_sec=document.getElementById("dur-sec");<br>
+                        <br>
+                        let timer;<br>
+                        let Autoplay=0;<br>
+                        let index=0;<br>
+                        let playing_song=false;<br>
+                        let ini_vol=recent_volume.value/100;<br>
+                        var duration_count;<br>
+                        const track=document.createElement("audio");<br>
+                        seeker.value=0;<br>
+                        // All Songs List Here<br>
+                        let songs=[<br>
+                        {<br>
+                        name:"Prasthanam",<br>
+                        path:"Audio/Musics/music1.mp3",<br>
+                        img:"Audio/Posters/music1.jpg",<br>
+                        singer:"Dev Negi",<br>
+                        },<br>
+                        {<br>
+                        name:"Kar har Maidan Fateh",<br>
+                        path:"Audio/Musics/music2.mp3",<br>
+                        img:"Audio/Posters/music2.jpg",<br>
+                        singer:"Shreya Ghoshal & Sukhwinder Singh",<br>
+                        },<br>
+                        {<br>
+                        name:"Kabhi Tumhe",<br>
+                        path:"Audio/Musics/music3.mp3",<br>
+                        img:"Audio/Posters/music3.jpg",<br>
+                        singer:"Darshan Raval",<br>
+                        },<br>
+                        {<br>
+                        name:"Lut Gaye",<br>
+                        path:"Audio/Musics/music4.mp3",<br>
+                        img:"Audio/Posters/music4.jpg",<br>
+                        singer:"Jubin Nautiyal",<br>
+                        },<br>
+                        {<br>
+                        name:"Hero's Come Back",<br>
+                        path:"Audio/Musics/music5.mp3",<br>
+                        img:"Audio/Posters/music5.jpg",<br>
+                        singer:"Nobody Knows",<br>
+                        }<br>
+                        ];<br>
+
+                        //All Functions<br>
+                        // Function to load Tracks<br>
+                        function load_track(index){<br>
+                        clearInterval(timer);<br>
+                        track.src=songs[index].path;<br>
+                        Title.innerHTML=songs[index].name;<br>
+                        artist.innerHTML=songs[index].singer;<br>
+                        track_image.src=songs[index].img;<br>
+                        console.log(track);<br>
+                        <br>
+                        track.load();<br>
+                        timer=setInterval(range_slider,1000);<br>
+                        setInterval(dur,1000);<br>
+                        total_dur();<br>
+                        now_playing.innerHTML=index+1;<br>
+                        songs_list.innerHTML=songs.length;<br>
+                        }<br>
+                        load_track(index);<br>
+                        //Loads track duration<br>
+                        track.addEventListener('loadedmetadata',function(){<br>
+                        duration_count=track.duration;<br>
+                        total_dur();<br>
+                        },false);<br>
+                        // console.log(duration_count);<br>
+                        function play()<br>
+                        {<br>
+                        if(playing_song==false){<br>
+                        playsong();<br>
+                        }<br>
+                        else{<br>
+                        pausesong();<br>
+                        }<br>
+                        }<br>
+                        <br>
+                        //Play Songs<br>
+                        function playsong(){<br>
+                        track.play();<br>
+                        playing_song=true;<br>
+                        play_Song.innerHTML='&lt;i class="fa-solid fa-pause"&gt;&lt;/i&gt;';<br>
+                        }<br>
+                        //Pause Songs<br>
+                        function pausesong()<br>
+                        {<br>
+                        track.pause();<br>
+                        playing_song=false;<br>
+                        play_Song.innerHTML='&lt;i class="fa-solid fa-play"&gt;&lt;/i&gt;';<br>
+                        }<br>
+                        //Next Songs<br>
+                        function next_song(){<br>
+                        if(index&lt;songs.length-1){<br>
+                        index+=1;<br>
+                        load_track(index);<br>
+                        playsong();<br>
+                        }<br>
+                        else<br>
+                        { index=0;<br>
+                        load_track(index);<br>
+                        playsong();<br>
+                        }<br>
+                        }<br>
+                        //Previous Song <br>
+                        function previous_song(){<br>
+                        if(index>0)<br>
+                        {<br>
+                        index-=1;<br>
+                        load_track(index);<br>
+                        playsong();<br>
+                        }<br>
+                        else{<br>
+                        index=songs.length-1;<br>
+                        load_track(index);<br>
+                        playsong();<br>
+                        }<br>
+                        }<br>
+                        //Change VolumeValue<br>
+                        function volume_change(){<br>
+                        volume_value.innerHTML=recent_volume.value;<br>
+                        track.volume=recent_volume.value/100;<br>
+                        volume.innerHTML='&lt;i class="fa-solid fa-volume-high"&gt;&lt;/i&gt;';<br>
+                        ini_vol=track.volume;<br>
+                        }<br>
+                        //Change Duration<br>
+                        function change_duration(){<br>
+                        <br>
+                        track.currentTime=(seeker.value*track.duration)/100;<br>
+                        }<br>
+                        //Change slider position<br>
+                        function range_slider(){<br>
+                        let position=0;<br>
+                        if(! isNaN (track.duration))<br>
+                        {<br>
+                        position=(track.currentTime/track.duration)*100;<br>
+                        seeker.value=position;<br>
+                        }<br>
+                        if(track.ended){<br>
+                        play_Song.innerHTML='&lt;i class="fa-solid fa-play"&gt;&lt;/i&gt;';<br>
+                        <br>
+                        if(Autoplay==1)<br>
+                        {<br>
+                        next_song();<br>
+                        }<br>
+                        }<br>
+                        }<br>
+                        //Reset Song Seeker<br>
+                        function reset_slider(){<br>
+                        seeker.value=0;<br>
+                        <br>
+                        }<br>
+                        // Autoplay Button<br>
+                        function autoplay(){<br>
+                        if(Autoplay==1){<br>
+                        Autoplay=0;<br>
+                        auto_play.style.backgroundColor="grey";<br>
+                        }<br>
+                        else{<br>
+                        Autoplay=1;<br>
+                        auto_play.style.backgroundColor="Red";<br>
+                        }<br>
+                        }<br>
+                        //Mute Songs<br>
+                        function mute_sound(){<br>
+                        if(track.volume!=0){<br>
+                        track.volume=0;<br>
+                        volume_value.innerHTML=0;<br>
+                        recent_volume.value=0;<br>
+                        volume.innerHTML='&lt;i class="fa-solid fa-volume-xmark"&gt;&lt;/i&gt;';<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                        track.volume=ini_vol;<br>
+                        volume_value.innerHTML=ini_vol*100;<br>
+                        recent_volume.value=ini_vol*100;<br>
+                        volume.innerHTML='&lt;i class="fa-solid fa-volume-high"&gt;&lt;/i&gt;';<br>
+                        }<br>
+                        }<br>
+                        //Duration timer<br>
+                        function dur(){<br>
+                        let min=parseInt((track.currentTime/60));<br>
+                        let sec=Math.round(track.currentTime%60)<br>
+                        if(sec&lt;10) <br>
+                        sec="0" +sec;<br>
+                        start_min.innerHTML=min;<br>
+                        start_sec.innerHTML=sec; <br>
+                        }
+                        <br> //Totald duration of the track<br>
+                        function total_dur(){<br>
+                        let min=parseInt((duration_count/60));<br>
+                        let sec=Math.round(duration_count%60);<br>
+                        if(sec&lt;10) <br>
+                        sec="0" +sec; <br>
+                        dur_min.innerHTML=min;<br>
+                        dur_sec.innerHTML=sec;<br>
+                        }<br>
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboardJS()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+        </footer>
+    </div>
+    <script src="https://ayush-lib.netlify.app/audio.js"></script>
+    <script src="JS/Audio-display.js"></script>
+</body>
+
+</html>
