@@ -5,18 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik+Microbe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
-@import "../CSS/images.css";
-@import "../CSS/avatars.css";
-@import "../CSS/audio.css";
-@import "../CSS/snackbar.css";
-@import "../CSS/buttons.css";
-@import "../CSS/alert.css";
-@import "../CSS/chip.css";
-@import "../CSS/card.css";
-@import "../CSS/modal.css";
-@import "../CSS/navbar.css";
-@import "../CSS/forms.css";
-@import "../CSS/index.css";
+@import "CSS/images.css";
+@import "CSS/avatars.css";
+@import "CSS/audio.css";
+@import "snackbar.css";
+@import "buttons.css";
+@import "alert.css";
+@import "chip.css";
+@import "card.css";
+@import "modal.css";
+@import "navbar.css";
+@import "forms.css";
+@import "index.css";
 
 
 *{
