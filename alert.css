@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Fredoka&family=Poppins:wght@300&family=Roboto+Serif:wght@500&display=swap');
+
+:root {
+    --alert-font-size: 2rem;
+    --alert-message: 1.5rem;
+    --alert-close: 1.8rem;
+    --alert-font: 'Fredoka', sans-serif;
+}
+
+.alert-container {
+    width: 80%;
+}
+
+.alert {
+    width: 97%;
+    height: fit-content;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.message {
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: var(--alert-font-size);
+    font-family: var(--alert-font);
+}
+
+.success {
+    background-color: rgb(178, 230, 119);
+    border-left: 0.5rem solid green;
+
+}
+
+.failed {
+    background-color: rgb(253, 113, 113);
+    border-left: 0.5rem solid red;
+}
+
+.warning {
+    background-color: wheat;
+    border-left: 0.5rem solid rgb(241, 172, 44);
+}
+
+.info {
+    background-color: #8DEEEE;
+    border-left: 0.5rem solid #008B8B;
+
+}
+
+.close {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.2s;
+    width: 3rem;
+    border-radius: 70%;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0.5rem;
+    height: 3rem;
+}
+
+.des {
+    font-size: var(--alert-message);
+    font-family: var(--alert-font);
+}
+
+.success>.close:hover {
+    background-color: green;
+    color: white;
+}
+
+.failed>.close:hover {
+    background-color: rgb(204, 3, 3);
+    color: white;
+}
+
+.warning>.close:hover {
+    background-color: rgb(196, 127, 1);
+    color: white;
+}
+
+.info>.close:hover {
+    background-color: #008B8B;
+    color: white;
+}
+
+.message-alert .close {
+    font-size: var(--alert-close);
+}
+
+/* Display  */
+#close-alrt-demo {
+    display: none;
+}
+
+#close-alrt-title {
+    display: none
+}
+
+#close-alrt-code {
+    display: none;
+}
+
+#msg-alrt-demo {
+    display: none;
+}
+
+#msg-alrt-title {
+    display: none
+}
+
+#msg-alrt-code {
+    display: none;
+}

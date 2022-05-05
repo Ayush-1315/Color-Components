@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Alert</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #alert {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont" id="page-cont">
+            <span class="heading">Alert</span>
+            <p class="component-description">
+                An alert dialog box is mostly used to give a warning message to the users. For example, if one input
+                field requires to enter some text but the user does not provide any input, then as a part of validation,
+                you can use an alert box to give a warning message.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <!-- Component Title -->
+            <span id="normal-alrt-title" class="sub-heading">Normal Alert</span>
+            <span id="close-alrt-title" class="sub-heading">Close Alert</span>
+            <span id="msg-alrt-title" class="sub-heading">Alert Message</span>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Normal Alert -->
+                    <div class="alert-container normal-alert" id="normal-alrt-demo">
+                        <div class="alert success">
+                            <span class="message"><i class="fa-solid fa-circle-check"></i>&nbsp; &nbsp;Success</span>
+                        </div>
+                        <div class="alert failed">
+                            <span class="message"><i class="fa-solid fa-circle-exclamation"></i>&nbsp;
+                                &nbsp;Error</span>
+                        </div>
+                        <div class="alert  warning">
+                            <span class="message"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                &nbsp;Warning</span>
+                        </div>
+                        <div class="alert  info">
+                            <span class="message"><i class="fa-solid fa-circle-info"></i>&nbsp; &nbsp;Information</span>
+                        </div>
+                    </div>
+                    <!-- Alert with Cross button -->
+                    <div class="alert-container cross-alert" id="close-alrt-demo">
+                        <div class="alert success">
+                            <span class="message"><i class="fa-solid fa-circle-check"></i>&nbsp; &nbsp;Success</span>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <div class="alert failed">
+                            <span class="message"><i class="fa-solid fa-circle-exclamation"></i>&nbsp;
+                                &nbsp;Error</span>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <div class="alert  warning">
+                            <span class="message"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                &nbsp;Warning</span>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <div class="alert  info">
+                            <span class="message"><i class="fa-solid fa-circle-info"></i>&nbsp; &nbsp;Information</span>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                    </div>
+                    <!-- Alert with Message -->
+                    <div class="alert-container message-alert" id="msg-alrt-demo">
+                        <div class=" alert success">
+                            <div>
+                                <span class="message"><i class="fa-solid fa-circle-check"></i>&nbsp;
+                                    &nbsp;Success</span>
+                                <div class="des">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+
+                        </div>
+                        <div class="alert failed">
+                            <div>
+                                <span class="message"><i class="fa-solid fa-circle-exclamation"></i>&nbsp;
+                                    &nbsp;Error</span>
+                                <div class="des">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <div class="alert  warning">
+                            <div>
+                                <span class="message"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                    &nbsp;Warning</span>
+                                <div class="des">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <div class="alert  info">
+                            <div>
+                                <span class="message"><i class="fa-solid fa-circle-info"></i>&nbsp;
+                                    &nbsp;Information</span>
+                                <div class="des">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+
+                    </div>
+                    <select name="select-component" id="component-select" onchange="showDiv(this)">
+                        <option value="0">Normal Alert</option>
+                        <option value="1">Close Alert</option>
+                        <option value="2">Alert Message</option>
+                    </select>
+
+                </div>
+            </div>
+            <span class="Code-title">HTML Code</span>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Normal Alert Code -->
+                    <span id="normal-alrt-code">
+                        &lt;div class="alert-container normal-alert" id="normal-alrt"><br>
+                        &lt;div class="alert success"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-check">&lt;/i>&nbsp;
+                        &nbsp;Success&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div class="alert failed"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-exclamation">&lt;/i>&nbsp;
+                        &nbsp;Error&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div class="alert warning"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-triangle-exclamation">&lt;/i>&nbsp;
+                        &nbsp;Warning&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div class="alert info"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-info">&lt;/i>&nbsp;
+                        &nbsp;Information&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Close Alert -->
+                    <span id="close-alrt-code">
+                        &lt;div class="alert-container cross-alert" id="close-alrt"><br>
+                        &lt;div class="alert success"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-check">&lt;/i>&nbsp;
+                        &nbsp;Success&lt;/span> <br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div class="alert failed"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-exclamation">&lt;/i>&nbsp;
+                        &nbsp;Error&lt;/span><br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div class="alert warning"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-triangle-exclamation">&lt;/i>&nbsp;
+                        &nbsp;Warning&lt;/span><br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div class="alert info"><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-info">&lt;/i>&nbsp;
+                        &nbsp;Information&lt;/span><br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Message Alert Code -->
+                    <span id="msg-alrt-code">
+                        &lt;div class="alert-container message-alert" id="msg-alrt"><br>
+                        &lt;div class=" alert success"><br>
+                        &lt;div><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-check">&lt;/i>&nbsp;
+                        &nbsp;Success&lt;/span><br>
+                        &lt;div class="des">Lorem ipsum dolor sit amet consectetur.&lt;/div><br>
+                        &lt;/div><br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+
+                        &lt;div class="alert failed"><br>
+                        &lt;div><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-exclamation">&lt;/i>&nbsp;
+                        &nbsp;Error&lt;/span><br>
+                        &lt;div class="des">Lorem ipsum dolor sit amet consectetur.&lt;/div><br>
+                        &lt;/div><br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+
+                        &lt;div class="alert warning"><br>
+                        &lt;div><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-triangle-exclamation">&lt;/i>&nbsp;
+                        &nbsp;Warning&lt;/span><br>
+                        &lt;div class="des">Lorem ipsum dolor sit amet consectetur.&lt;/div><br>
+                        &lt;/div><br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+
+                        &lt;div class="alert info"><br>
+                        &lt;div><br>
+                        &lt;span class="message">&lt;i class="fa-solid fa-circle-info">&lt;/i>&nbsp;
+                        &nbsp;Information&lt;/span><br>
+                        &lt;div class="des">Lorem ipsum dolor sit amet consectetur.&lt;/div><br>
+                        &lt;/div><br>
+                        &lt;span class="close">&lt;i class="fa-solid fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+        </footer>
+    </div>
+    <script src="JS/Alert.js"></script>
+</body>
+
+</html>
