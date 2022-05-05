@@ -28,32 +28,32 @@ seeker.value=0;
 let songs=[
     {
         name:"Prasthanam",
-        path:"Audio/Musics/music1.mp3",
-        img:"Audio/Posters/music1.jpg",
+        path:"music1.mp3",
+        img:"music1.jpg",
         singer:"Dev Negi",
     },
     {
         name:"Kar har Maidan Fateh",
-        path:"Audio/Musics/music2.mp3",
-        img:"Audio/Posters/music2.jpg",
+        path:"music2.mp3",
+        img:"music2.jpg",
         singer:"Shreya Ghoshal & Sukhwinder Singh",
     },
     {
         name:"Kabhi Tumhe",
-        path:"Audio/Musics/music3.mp3",
-        img:"Audio/Posters/music3.jpg",
+        path:"music3.mp3",
+        img:"music3.jpg",
         singer:"Darshan Raval",
     },
     {
         name:"Lut Gaye",
-        path:"Audio/Musics/music4.mp3",
-        img:"Audio/Posters/music4.jpg",
+        path:"music4.mp3",
+        img:"music4.jpg",
         singer:"Jubin Nautiyal",
     },
     {
         name:"Hero's Come Back",
-        path:"Audio/Musics/music5.mp3",
-        img:"Audio/Posters/music5.jpg",
+        path:"music5.mp3",
+        img:"music5.jpg",
         singer:"Nobody Knows",
     }
 ];
