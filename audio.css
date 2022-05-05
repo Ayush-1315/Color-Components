@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins:wght@300&family=Roboto+Serif:wght@500&display=swap');
+:root{
+    --player-width:20vw;
+    --font:1.5rem;
+    --font-Title:2rem;
+    --font-name:'Baloo Bhaijaan 2', cursive;
+    --Code-Title:3rem;
+}
+
+#Poster{
+    border-radius: 0.7rem 0.7rem 0 0;
+    height:100%
+}
+#info{
+    /* position:absolute; */
+    width:var(--player-width);
+    color:black;
+    background-image: linear-gradient(rgb(134, 134, 134), black);
+    opacity: 0.8;
+    box-shadow:0 -2px 1px 1px grey;
+}
+.player-1{
+    height:fit-content;
+    width:var(--player-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:1rem;
+    background-color: white;
+    box-shadow: 3px 3px 5px 3px rgb(110, 110, 110),-3px -3px 5px 3px rgb(110, 110, 110);
+}
+#poster{
+    height:55%;
+    width:100%;
+    /* background-image: url('../Audio/Posters/Prasthanam.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    border-radius: 0.7rem 0.7rem 0 0;
+
+}
+#Title{
+    Color:white;
+    font-size: var(--font-Title);
+    font-family: var(--font-name);
+    opacity: 1;
+}
+#Artist{
+    Color:white;
+    font-size: var(--font-Title);
+    opacity: 1;
+    font-family: var(--font-name);
+}
+#poster-music{
+   width: 100%;
+   height: 100%;
+   border-radius:0.7rem 0.7rem 0 0;
+}
+#duration-time{
+    display: inline-block;
+    font-family: var(--font-name);
+    font-size: var(--font);
+}
+#audio-dur{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+#controls{
+    width:100%;
+    height:45%;
+    border-radius: 0 0 0.7rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: whitesmoke;
+    background-image: linear-gradient(#0E185F, #2FA4FF);
+}
+input[type=range]{
+    -webkit-appearance: none;
+    width:80%;
+    display:block;
+    height:3px;
+    margin:20px 0;
+    cursor:pointer;
+    background-color: rgb(238, 106, 18);
+   transition: all 0.3s;
+}
+input[type=range]:hover{
+    box-shadow:1px 1px 5px 0.2px white;
+}
+input[type=range] ::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: red;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    cursor:pointer;
+    box-shadow: 2px 2px 2px orange;
+}
+
+#track{
+    margin: 1px 0;
+    padding: 5px 9px;
+    border-radius: 0.5rem;
+    background-color: grey;
+    color: white;
+    font-family: var(--font-name);
+    font-size: var(--font);
+    font-weight: bold;
+}
+#control_buttons{
+    margin:10px 0;
+}
+.buttons{
+    display: inline-block;
+    height:fit-content;
+    width:fit-content;
+    padding:8px 13px;
+    border:none;
+    cursor: pointer;
+    font-size: var(--font);
+    border-radius: 50%;
+    box-shadow:2px 2px 5px 2px orange,-2px -2px 5px 2px orange;
+    margin:0 5px;
+    background-color: grey;
+    color:white;
+    text-shadow: 2px 2px 6px rgb(110, 105, 105);
+
+}
+.playback{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:0.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+#volume_seeker{
+    display: inline-block;
+    width:55%;
+    margin:10px 0;
+}
+#auto_play{
+    font-size: var(--font);
+    padding:8px;
+    border:none;
+    /* background-color: red; */
+    cursor:pointer;
+}
+#volume{
+    padding:0.5rem;
+    font-size: var(--font);
+}
+#volume_value
+{
+text-align:center;
+margin-top:5px;
+font-family: 'Nunito', sans-serif;
+color:white;
+}
+.Code-title{
+    font-size:var(--Code-Title);
+    font-family: var(--font-name);
+    font-weight:bold;
+}
+#audio-code{
+    display:block;
+}
+#audio-JS-code{
+    display:block;
+}
+@media (min-width:280px) and (max-width:480px){
+   :root{
+       --player-width:70vw;
+   }
+}
+@media (min-width:481px) and (max-width:768px){
+   :root{
+       --player-width:40vw;
+   }
+}
