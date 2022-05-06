@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root{
+    --chip-font:'Nunito', sans-serif;
+    --chip-font-size:2rem;
+    --img-chip-height:4rem;
+    --img-chip-width:4rem;
+}
+.chips{
+    background-color: white;
+    height:50vh;
+    width:60vw;
+    border-radius: 10px;
+    display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+.chip-container{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    margin:2rem;
+
+}
+.chips-btn{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(203, 203, 203);
+    width:fit-content;
+    height:fit-content;
+    align-items: center;
+    justify-content: space-around;
+    padding:0.5rem 0.8rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin: 1rem 1rem;
+}
+#image-chips>.chips-btn{
+    border-radius: 5rem;
+    padding:0.2rem 0.4rem;
+}
+.img-chip{
+    border-radius: 80%;
+    width:var(--img-chip-width);
+    height:var(--img-chip-height);
+}
+.chips-btn{
+    color:black;
+    font-family: var(--chip-font);
+    font-size:var(--chip-font-size);
+    font-weight:600;
+}
+.chips-btn:hover{
+color:rgb(177, 177, 177);
+}
+.close-chip{
+    display: inline-block;
+    padding:0.2rem 0.3rem;
+    border-radius: 50%;
+    margin-left:0.6rem;
+}
+/* Outline Chips */
+#outline-chips>.chips-btn{
+    background-color: white;
+    color:black;
+}
+#outline-chips a{
+    color:black;
+}
+.primary-chip{
+    border:2px solid blue;
+}
+.primary-chip:hover{
+    color:blue !important;
+}
+.secondary-chip{
+    border: 2px solid purple;
+}
+.secondary-chip:hover{
+    color:purple !important;
+}
+.success-chip{
+    border: 2px solid green;
+}
+.success-chip:hover{
+    color:green !important;
+}
+.warning-chip{
+    border: 2px solid orange;
+}
+.warning-chip:hover{
+    color:orange !important;
+}
+.info-chip{
+    border: 2px solid cyan;
+}
+.info-chip:hover{
+    color:cyan !important;
+}
+/* Display */
+#action-chips{
+    display:none;
+}
+#action-chips-title{
+    display:none;
+}
+#action-chips-code{
+    display:none;
+}
+#image-chips{
+    display:none;
+}
+#image-chips-title{
+    display:none;
+}
+#image-chips-code{
+    display:none;
+}
+#outline-chips{
+    display:none;
+}
+#outline-chips-title{
+    display:none;
+}
+#outline-chips-code{
+    display:none;
+}
