@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Forms</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #login {
+            background-color: #3a776c;  background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont" id="page-cont">
+            <span class="heading">Forms</span>
+            <p class="component-description">
+                A Login form is used to enter authentication credentials to access a restricted page or form. The login
+                form contains a field for the username and another for the password. When the login form is submitted
+                its underlying code checks that the credentials are authentic, giving the user can access the restricted
+                page.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <!-- Component Title -->
+            <span id="basic-login-title" class="sub-heading">Basic Login</span>
+            <span id="travel-login-title" class="sub-heading">Register Form</span>
+            <span id="login-signup-title" class="sub-heading">Login-Signup</span>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Basic Login -->
+
+                    <div id="basic-log-demo">
+                        <form action="">
+                            <h3 class="login-title">Login</h3>
+                            <label for="user">Username</label>
+                            <input type="text" id="user" placeholder="Username">
+                            <label for="pass">Password</label>
+                            <input type="password" id="user" placeholder="Password">
+                            <input type="submit" value="Sign-in">
+                        </form>
+                        <div id="login-opt">
+                            <span class="opt-log"><a href="#" id="google-login"><i
+                                        class="fa-brands fa-google"></i></a></span>
+                            <span class="opt-log"><a href="# " id="telegram-login"><i
+                                        class="fa-brands fa-telegram"></i></a></span>
+                            <span class="opt-log"><a href="# " id="facebook-login"><i
+                                        class="fa-brands fa-facebook"></i></a></span>
+
+                        </div>
+                    </div>
+                    <!-- Travel Login -->
+                    <div id="travel-log-demo">
+                        <div id="login-travel">
+                            <div id="log-top" style="background:url('86.jpg') no-repeat center center;">
+                                <p> Welcome Traveller</p>
+                                <span id="log-des"> Take a deep breath and enjoy your journey!</span>
+                            </div>
+                            <div id="form">
+                                <form action="">
+                                    <input type="email" id="usermail" placeholder="E-mail">
+
+                                    <input type="password" id="user" placeholder="Password">
+                                    <input type="text" id="user" placeholder="Phone" maxlength="10">
+                                    <input type="submit" value="Register">
+                                </form>
+                            </div>
+                            <p>Already a member? <a href="#">Login</a> </p>
+                        </div>
+                        <div id="log-display" style="background:url(tavel-log.jpg) no-repeat center ;"></div>
+
+                    </div>
+                    <!-- Login Sign Up-->
+                    <div id="Login-Signup-demo">
+                        <div id="login-travel">
+                            <div id="log-top" style="background:url('86.jpg') no-repeat center center;">
+                                <p> Welcome Traveller</p>
+                                <span id="log-des"> Take a deep breath and enjoy your journey!</span>
+
+                            </div>
+                            <div id="login-signup">
+                                <span class="login-Signup" id="Login" onclick="showLogin()">Login</span>
+                                <span class="login-Signup" id="signup" onclick="showRegister()">Signup</span>
+                            </div>
+                            <div id="register">
+                                <form action="">
+                                    <input type="email" id="usermail" placeholder="E-mail">
+
+                                    <input type="password" id="user" placeholder="Password">
+                                    <input type="text" id="user" placeholder="Phone" maxlength="10">
+                                    <input type="submit" value="Register">
+                                </form>
+                            </div>
+                            <div id="login-form">
+                                <form action="">
+
+                                    <input type="text" id="user" placeholder="Username">
+
+                                    <input type="password" id="user" placeholder="Password">
+                                    <input type="submit" value="Sign-in">
+                                </form>
+                                <div id="login-opt">
+                                    <span class="opt-log"><a href="#" id="google-login"><i
+                                                class="fa-brands fa-google"></i></a></span>
+                                    <span class="opt-log"><a href="# " id="telegram-login"><i
+                                                class="fa-brands fa-telegram"></i></a></span>
+                                    <span class="opt-log"><a href="# " id="facebook-login"><i
+                                                class="fa-brands fa-facebook"></i></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="log-display" style="background:url(tavel-log.jpg) no-repeat center ;"></div>
+
+                    </div>
+
+                    <select name="select-component" id="component-select" onchange="showDiv(this)">
+                        <option value="0">Basic Login</option>
+                        <option value="1">Register Form</option>
+                        <option value="2">Login-Signup</option>
+                    </select>
+
+                </div>
+            </div>
+            <span class="Code-title">HTML Code</span>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Basic-log-code -->
+                    <span id="basic-log-code">
+
+                        &lt;div id="basic-log"&gt;<br>
+                        &lt;form action=""><br>
+                        &lt;h3 class="login-title">Login&lt;/h3><br>
+                        &lt;label for="user">Username&lt;/label><br>
+                        &lt;input type="text" id="user" placeholder="Username"><br>
+                        &lt;label for="pass">Password&lt;/label><br>
+                        &lt;input type="password" id="user" placeholder="Password"><br>
+                        &lt;input type="submit" value="Sign-in"><br>
+                        &lt;/form><br>
+                        &lt;div id="login-opt"><br>
+                        &lt;span class="opt-log">&lt;a href="#" id="google-login">&lt;i
+                        class="fa-brands fa-google">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="opt-log">&lt;a href="# " id="telegram-login">&lt;i
+                        class="fa-brands fa-telegram">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="opt-log">&lt;a href="# " id="facebook-login">&lt;i
+                        class="fa-brands fa-facebook">&lt;/i>&lt;/a>&lt;/span><br>
+
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Register Form -->
+                    <span id="register-form-code">
+                        &lt;div id="travel-log"><br>
+                        &lt;div id="login-travel"><br>
+                        &lt;div id="log-top" style="background:url('86.jpg') no-repeat center center;"><br>
+                        &lt;p> Welcome Traveller&lt;/p><br>
+                        &lt;span id="log-des"> Take a deep breath and enjoy your journey!&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div id="form"><br>
+                        &lt;form action=""><br>
+                        &lt;input type="email" id="usermail" placeholder="E-mail"><br>
+                        &lt;input type="password" id="user" placeholder="Password"><br>
+                        &lt;input type="text" id="user" placeholder="Phone" maxlength="10"><br>
+                        &lt;input type="submit" value="Register"><br>
+                        &lt;/form><br>
+                        &lt;/div><br>
+                        &lt;p>Already a member? &lt;a href="#">Login&lt;/a> &lt;/p><br>
+                        &lt;/div><br>
+                        &lt;div id="log-display" style="background:url(tavel-log.jpg) no-repeat center ;">&lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Login-SignUp Form -->
+                    <span id="login-signup-code">
+                        &lt;div id="Login-Signup"><br>
+                        &lt;div id="login-travel"><br>
+                        &lt;div id="log-top" style="background:url('86.jpg') no-repeat center center;"><br>
+                        &lt;p> Welcome Traveller &lt;/p><br>
+                        &lt;span id="log-des"> Take a deep breath and enjoy your journey! &lt;/span><br>
+
+                        &lt;/div><br>
+                        &lt;div id="login-signup"><br>
+                        &lt;span class="login-Signup" id="Login" onclick="showLogin()">Login &lt;/span><br>
+                        &lt;span class="login-Signup" id="signup" onclick="showRegister()">Signup &lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div id="register"><br>
+                        &lt;form action=""><br>
+                        &lt;input type="email" id="usermail" placeholder="E-mail"><br>
+
+                        &lt;input type="password" id="user" placeholder="Password"><br>
+                        &lt;input type="text" id="user" placeholder="Phone" maxlength="10"><br>
+                        &lt;input type="submit" value="Register"><br>
+                        &lt;/form><br>
+                        &lt;/div><br>
+                        &lt;div id="login-form"><br>
+                        &lt;form action=""><br>
+                        &lt;input type="text" id="user" placeholder="Username"><br>
+
+                        &lt;input type="password" id="user" placeholder="Password"><br>
+                        &lt;input type="submit" value="Sign-in"><br>
+                        &lt;/form><br>
+                        &lt;div id="login-opt"><br>
+                        &lt;span class="opt-log">&lt;a href="#" id="google-login">&lt;i
+                        class="fa-brands fa-google">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="opt-log">&lt;a href="# " id="telegram-login">&lt;i
+                        class="fa-brands fa-telegram">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="opt-log">&lt;a href="# " id="facebook-login">&lt;i
+                        class="fa-brands fa-facebook">&lt;/i>&lt;/a>&lt;/span><br>
+
+                        &lt;/div><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                        &lt;div id="log-display" style="background:url(tavel-log.jpg) no-repeat center ;">&lt;/div><br>
+
+                        &lt;/div><br>
+                    </span>
+                </p>
+
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+       
+                <span class="Code-title">JavaScript Code (Login-Signup)</span>
+                <div class="JS-code" id="audio-JS-code">
+                    <div id="con">
+                        <i class="fa fa-solid fa-circle red"></i>
+                        <i class="fa fa-solid fa-circle green"></i>
+                        <i class="fa fa-solid fa-circle yellow"></i>
+                    </div>
+                    <p id="copy-JS-code">
+                        <!-- Music Player -->
+                        <span id="Login-Signup-code">
+                            function showRegister() {<br>
+                            document.getElementById('login-form').style.display="none";<br>
+                            document.getElementById('register').style.display="flex";<br>
+                            document.getElementById('signup').style.borderBottom="2px solid blueviolet";<br>
+                            document.getElementById('Login').style.borderBottom="2px solid white";<br>
+
+                            <br>
+                            }<br>
+                            function showLogin() {<br>
+                            document.getElementById('login-form').style.display="flex";<br>
+                            document.getElementById('register').style.display="none";<br>
+                            document.getElementById('signup').style.borderBottom="2px solid white";<br>
+                            document.getElementById('Login').style.borderBottom="2px solid blueviolet";<br>
+                            }<br>
+                        </span>
+                    </p>
+                    <div class="bt">
+                        <button onclick="copyToClipboardJS()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                    </div>
+         
+        </div>
+
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div id="foot">
+            <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+    </footer>
+    </div>
+    <script src="JS/login.js"></script>
+</body>
+
+</html>

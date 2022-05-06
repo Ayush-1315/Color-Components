@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Chips</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <style>
+        #chips {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span  id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+           
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont" id="page-cont">
+            <span class="heading">Chips</span>
+            <p class="component-description">
+                Chips are compact elements that represent an input, attribute, or action. All chips now share a boxier
+                shape with rounded corners, updated color mappings, and dynamic color compatibility.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <p class="component-description">
+                <!-- Component Title -->
+                <span id="plain-chips-title" class="sub-heading">Plain Chips</span>
+                <span id="action-chips-title" class="sub-heading">Action Chips</span>
+                <span id="image-chips-title" class="sub-heading">Image Chips</span>
+                <span id="outline-chips-title" class="sub-heading">Outline Chips</span>
+            </p>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Plain Chips -->
+                    <div id="plain-chips" class="chip-container">
+                        <div class="chips-btn">
+                            <span>Home</span>
+                        </div>
+                        <div class="chips-btn">
+                            <span>Contacts</span>
+                        </div>
+                        <div class="chips-btn">
+                            <span>Call</span>
+                        </div>
+                        <div class="chips-btn">
+                            <span>Help</span>
+                        </div>
+                    </div>
+                    <!-- Action Chips -->
+                    <div id="action-chips" class="chip-container">
+                        <div class="chips-btn">
+                            <span><i class="fa-solid fa-house"></i>&nbsp;Home</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn">
+                            <span><i class="fa-solid fa-id-badge"></i>&nbsp;Contacts</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn">
+                            <span><i class="fa-solid fa-phone"></i>&nbsp;Call</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn">
+                            <span><i class="fa-solid fa-circle-question"></i>&nbsp;Help</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                    </div>
+                    <!-- Image Chips -->
+                    <div id="image-chips" class="chip-container">
+                        <div class="chips-btn">
+                            <img src="Images/avatar-1.jpg" alt="John" class="img-chip">&nbsp;<span></span>John</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn">
+                            <img src="Images/avatar-2.jpg" alt="Anna" class="img-chip"><span>Anna</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn">
+                            <img src="Images/avatar-3.jpg" alt="Rock" class="img-chip"><span>Rock</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn">
+                            <img src="Images/avatar-4.jpg" alt="Annabelle" class="img-chip"> <span>Annabelle</span><i
+                                class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                    </div>
+                    <!-- Outline Chips -->
+                    <div id="outline-chips" class="chip-container">
+                        <div class="chips-btn primary-chip">
+                            <span>Primary</span><i class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn secondary-chip">
+                            <span>Secondary</span><i class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn success-chip">
+                            <span>Success</span><i class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn warning-chip">
+                            <span>Warning</span><i class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                        <div class="chips-btn info-chip">
+                            <span>Info</span><i class="fa-solid fa-xmark close-chip"></i>
+                        </div>
+                    </div>
+                </div>
+                <select name="select-component" id="component-select" onchange="showDiv(this)">
+                    <option value="0">Plain Chips</option>
+                    <option value="1">Action Chips</option>
+                    <option value="2">Image Chips</option>
+                    <option value="3">Outline Chips</option>
+                </select>
+            </div>
+            <span class="Code-title">HTML Code</span>
+            
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Plain Chips Code -->
+                    <span id="plain-chips-code">
+                        &lt;div id="plain-chips" class="chip-container"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Home&lt;/span&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Contacts&lt;/span&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Call&lt;/span&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Help&lt;/span&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    </span>
+                    <!-- Action Chips Code-->
+                    <span id="action-chips-code">
+                        &lt;div id="action-chips" class="chip-container"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;&lt;i class="fa-solid
+                        fa-house"&gt;&lt;/i&gt;&nbsp;Home&lt;/span&gt;&lt;i class="fa-solid fa-xmark
+                        close-chip"&gt;&lt;/i&gt;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;&lt;i class="fa-solid
+                        fa-id-badge"&gt;&lt;/i&gt;&nbsp;Contacts&lt;/span&gt;&lt;i class="fa-solid fa-xmark
+                        close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;&lt;i class="fa-solid
+                        fa-phone"&gt;&lt;/i&gt;&nbsp;Call&lt;/span&gt;&lt;i
+                        class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;&lt;i class="fa-solid
+                        fa-circle-question"&gt;&lt;/i&gt;&nbsp;Help&lt;/span&gt;&lt;i
+                        class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &lt;/div&gt;
+                    </span>
+                    <!-- Image Chips Code-->
+                    <span id="image-chips-code">
+                        &lt;div id="image-chips" class="chip-container"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-1.jpg" alt="John"
+                        class="img-chip"&gt;&nbsp;&lt;span&gt;&lt;/span&gt;John&lt;/span&gt;&lt;i
+                        class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-2.jpg" alt="Anna"
+                        class="img-chip"&gt;&lt;span&gt;Anna&lt;/span&gt;&lt;i
+                        class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-3.jpg" alt="Rock"
+                        class="img-chip"&gt;&lt;span&gt;Rock&lt;/span&gt;&lt;i
+                        class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-4.jpg" alt="Annabelle"
+                        class="img-chip"&gt;
+                        &lt;span&gt;Annabelle&lt;/span&gt;&lt;i
+                        class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &lt;/div&gt;
+                    </span>
+                    <!-- Outline Chips -->
+                    <span id="outline-chips-code">
+                        &lt;div id="outline-chips" class="chip-container"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn primary-chip"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Primary&lt;/span&gt;&lt;i class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn secondary-chip"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Secondary&lt;/span&gt;&lt;i class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn success-chip"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Success&lt;/span&gt;&lt;i class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn warning-chip"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Warning&lt;/span&gt;&lt;i class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="chips-btn info-chip"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Info&lt;/span&gt;&lt;i class="fa-solid fa-xmark close-chip"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+        </footer>
+    </div>
+    <script src="JS/Chips.js"></script>
+</body>
+
+</html>

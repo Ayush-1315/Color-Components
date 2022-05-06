@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Cards</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <style>
+        #card {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont" id="page-cont">
+            <span class="heading">Cards</span>
+            <p class="component-description">
+                A card is a small rectangular module with images and text. It is an entry point for users to learn more
+                details. To balance the aesthetics and usability of the interface, card UI design is basically a default
+                choice. Because cards are easy to use, they can also display content that contains different elements.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <!-- Component Title -->
+            <span id="basic-card-title" class="sub-heading">Basic Card</span>
+            <span id="overtext-card-title" class="sub-heading">TextOver Card</span>
+            <span id="header-card-title" class="sub-heading">Header Card</span>
+            <span id="horizontal-card-title" class="sub-heading">Horizontal Card</span>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Basic Card -->
+                    <div  id="basic-card-demo">
+                        <div class="card-image">
+                            <img src="images/1.jfif" alt="basic card image" class="img-card">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Nature</h2>
+                            <h4 class="card-subtitle">by Ayush Raj</h4>
+                            <p class="card-description">Nature can refer to the general realm of living plants and
+                                animals,
+                                and in some cases to the processes associated with inanimate objects</p>
+                        </div>
+                        <div class="card-buttons">
+                            <span class="card-links">
+                                <a href="#" class="card-link">READ</a>
+                                <a href="#" class="card-link">BOOKMARK</a>
+                            </span>
+                            <span class="card-buttons">
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="far fa-heart"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-share"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-caret-down"></i></a></span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- OverText Card -->
+                    <div  id="overtext-card-demo">
+
+                        <div class="card-image">
+                            <img src="images/2.jpg" alt="img" class="img-card">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Our Changing Planet</h2>
+                            <h4 class="card-subtitle">by Ayush Raj</h4>
+                        </div>
+                        <p class="card-description">
+                            Nature can refer to the general realm of living plants and animals, and in some cases to the
+                            processes associated with inanimate objects
+                        </p>
+
+                        <div class="card-buttons">
+                            <span class="card-links">
+                                <a href="#" class="card-link">READ</a>
+                                <a href="#" class="card-link">BOOKMARK</a>
+                            </span>
+                            <span class="card-buttons">
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="far fa-heart"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-share"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-caret-down"></i></a></span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Header Card -->
+                    <div  id="header-card-demo">
+                        <div class="card-content">
+                            <h2 class="card-title">Our Changing Planet</h2>
+                            <h4 class="card-subtitle">by Ayush Raj</h4>
+                        </div>
+                        <div class="card-image">
+                            <img src="images/3.jpg" alt="img" class="img-card">
+                        </div>
+
+                        <p class="card-description">
+                            Nature can refer to the general realm of living plants and animals,and in some cases to the
+                            processes associated with inanimate objects.
+                        </p>
+
+                        <div class="card-buttons">
+                            <span class="card-links">
+                                <a href="#" class="card-link">READ</a>
+                                <a href="#" class="card-link">BOOKMARK</a>
+                            </span>
+                            <span class="card-buttons">
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="far fa-heart"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-share"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-caret-down"></i></a></span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Horizontal Card -->
+                    <div  id="horizontal-card-demo">
+                        <div class="card-content">
+
+                            <img src="images/4.jpg" alt="img" class="img-card">
+
+                            <div>
+                                <h2 class="card-title">Our Changing Planet</h2>
+                                <h4 class="card-subtitle">by Ayush Raj</h4>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <span class="card-links">
+                                <a href="#" class="card-link">READ</a>
+                                <a href="#" class="card-link">BOOKMARK</a>
+                            </span>
+                            <span class="card-buttons">
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="far fa-heart"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-share"></i></a></span>
+                                <span class="card-btns"><a href="#" class="card-btns-link"><i
+                                            class="fa-solid fa-caret-down"></i></a></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <select name="select-component" id="component-select" onchange="showDiv(this)">
+                    <option value="0">Basic Card</option>
+                    <option value="1">TextOver Card</option>
+                    <option value="2">Header Card</option>
+                    <option value="3">Horizontal Card</option>
+                </select>
+            </div>
+            <span class="Code-title">HTML Code</span>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Basic Card -->
+                    <span id="basic-card-code">
+                        &lt;div id="basic-card"><br>
+                        &lt;div class="card-image"><br>
+                        &lt;img src="images/1.jfif" alt="basic card image" class="img-card"><br>
+                        &lt;/div><br>
+                        &lt;div class="card-content"><br>
+                        &lt;h2 class="card-title">Nature&lt;/h2><br>
+                        &lt;h4 class="card-subtitle">by Ayush Raj&lt;/h4><br>
+                        &lt;p class="card-description">Nature can refer to the general realm of living plants and
+                        animals,
+                        and in some cases to the processes associated with inanimate objects&lt;/p><br>
+                        &lt;/div><br>
+                        &lt;div class="card-buttons"><br>
+                        &lt;span class="card-links"><br>
+                        &lt;a href="#" class="card-link">READ&lt;/a><br>
+                        &lt;a href="#" class="card-link">BOOKMARK&lt;/a><br>
+                        &lt;/span><br>
+                        &lt;span class="card-buttons"><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="far fa-heart">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-share">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-caret-down">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Over Text Card -->
+                    <span id="text-over-card-code">
+                        &lt;div id="overtext-card"><br>
+                        &lt;div class="card-image"><br>
+                        &lt;img src="images/2.jpg" alt="img" class="img-card"><br>
+                        &lt;/div><br>
+                        &lt;div class="card-content"><br>
+                        &lt;h2 class="card-title">Our Changing Planet&lt;/h2><br>
+                        &lt;h4 class="card-subtitle">by Ayush Raj&lt;/h4><br>
+                        &lt;/div><br>
+                        &lt;p class="card-description"><br>
+                        Nature can refer to the general realm of living plants and animals, and in some cases to the
+                        processes associated with inanimate objects
+                        &lt;/p><br>
+                        &lt;div class="card-buttons"><br>
+                        &lt;span class="card-links"><br>
+                        &lt;a href="#" class="card-link">READ&lt;/a><br>
+                        &lt;a href="#" class="card-link">BOOKMARK&lt;/a><br>
+                        &lt;/span><br>
+                        &lt;span class="card-buttons"><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="far fa-heart">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-share">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-caret-down">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div><br>
+                    </span>
+                    <!-- Header Card -->
+                    <span id="header-card-code">
+                        &lt;div id="header-card"><br>
+                        &lt;div class="card-content"><br>
+                        &lt;h2 class="card-title">Our Changing Planet&lt;/h2><br>
+                        &lt;h4 class="card-subtitle">by Ayush Raj&lt;/h4><br>
+                        &lt;/div><br>
+                        &lt;div class="card-image"><br>
+                        &lt;img src="images/3.jpg" alt="img" class="img-card"><br>
+                        &lt;/div><br>
+
+                        &lt;p class="card-description"><br>
+                        Nature can refer to the general realm of living plants and animals,and in some cases to the
+                        processes associated with inanimate objects.
+                        &lt;/p><br>
+
+                        &lt;div class="card-buttons"><br>
+                        &lt;span class="card-links"><br>
+                        &lt;a href="#" class="card-link">READ&lt;/a><br>
+                        &lt;a href="#" class="card-link">BOOKMARK&lt;/a><br>
+                        &lt;/span><br>
+                        &lt;span class="card-buttons"><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="far fa-heart">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-share">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-caret-down">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Horizontal Card -->
+                    <span id="horizontal-card-code">
+                        &lt;div id="horizontal-card"><br>
+                        &lt;div class="card-content"><br>
+                        &lt;img src="images/4.jpg" alt="img" class="img-card"><br>
+                        &lt;div><br>
+                        &lt;h2 class="card-title">Our Changing Planet&lt;/h2><br>
+                        &lt;h4 class="card-subtitle">by Ayush Raj&lt;/h4><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                        &lt;div class="card-buttons"><br>
+                        &lt;span class="card-links"><br>
+                        &lt;a href="#" class="card-link">READ&lt;/a><br>
+                        &lt;a href="#" class="card-link">BOOKMARK&lt;/a><br>
+                        &lt;/span><br>
+                        &lt;span class="card-buttons"><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="far fa-heart">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-share">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;span class="card-btns">&lt;a href="#" class="card-btns-link">&lt;i
+                        class="fa-solid fa-caret-down">&lt;/i>&lt;/a>&lt;/span><br>
+                        &lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+        </footer>
+    </div>
+    <script src="JS/cards.js"></script>
+</body>
+
+</html>

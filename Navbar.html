@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Navbar</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #navbar {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont" id="page-cont">
+            <span class="heading">Navbar (Navigation-Bar)</span>
+            <p class="component-description">
+                A web browser navigation bar includes the back and forward buttons, as well as the Location bar where
+                URLs are entered. Formerly the functionality of the navigation bar was split between the browser's
+                toolbar and the address bar, but Google Chrome introduced the practice of merging the two.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <!-- Component Title -->
+            <span id="basic-nav-title" class="sub-heading">Basic Navbar</span>
+            <span id="side-nav-title" class="sub-heading">Side Navbar</span>
+            <span id="top-nav-title" class="sub-heading">Top-Down Navbar</span>
+            <span id="search-nav-title" class="sub-heading">Search Navbar</span>
+            <div class="preview">
+                <div class="content-preview">
+                    <div class="navbar-preview">
+                        <!-- Basic Navigation -->
+                        <div id="basic-nav-demo">
+                            <span class="nav-logo"><a href="#"><img src="Images/nav-logo.png" alt="logo"></a></span>
+                            <ul id="basic-nav-list" class="nav-list">
+                                <li><a href="#"> Home</a></li>
+                                <li> <a href="#"> Features</a></li>
+                                <li><a href="#"> Pricing</a></li>
+                                <li><a href="#"> About</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Side Navbar -->
+                        <div id="side-nav-demo">
+                            <div id="nav-top-demo">
+                                <span class="ham-switch" onclick="slideNavDemo()"><i
+                                        class="fa-solid fa-bars ham"></i></span>
+                            </div>
+                            <div id="nav-side-demo">
+                                <ul id="side-nav-list">
+                                    <span class="nav-logo"><a href="#"><img src="Images/nav-logo.png" alt="logo"
+                                                id="side-logo"></a></span>
+                                    <li><a href="#"> Home</a></li>
+                                    <li> <a href="#"> Features</a></li>
+                                    <li><a href="#"> Pricing</a></li>
+                                    <li><a href="#"> About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Top Navigation -->
+                        <div id="top-nav-demo">
+                            <div id="nav-top">
+                                <span class="ham-switch" onclick="downNav()"><i class="fa-solid fa-bars ham"></i></span>
+                            </div>
+                            <div id="nav-down">
+                                <ul id="down-nav-list">
+                                    <span class="nav-logo"><a href="#"><img src="Images/nav-logo.png" alt="logo"
+                                                id="side-logo"></a></span>
+                                    <li><a href="#"> Home</a></li>
+                                    <li> <a href="#"> Features</a></li>
+                                    <li><a href="#"> Pricing</a></li>
+                                    <li><a href="#"> About</a></li>
+                                    <span id="closeNav" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></span>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Search Navigation -->
+                        <div id="search-nav-demo">
+                            <ul id="search-nav-list" class="nav-list">
+                                <span class="nav-logo"><a href="#"><img src="Images/nav-logo.png" alt="logo"></a></span>
+                                <li><a href="#"> Home</a></li>
+                                <li> <a href="#"> Features</a></li>
+                                <li><a href="#"> Pricing</a></li>
+                                <li><a href="#"> About</a></li>
+                            </ul>
+                            <div>
+                                <input type="search" id="search-page" placeholder="Search...">
+                                <span id="searchNav"><i class="fa-solid fa-magnifying-glass"
+                                        onclick="showSearch()"></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <select name="select-component" id="component-select" onchange="showDiv(this)">
+                    <option value="0">Basic Nav</option>
+                    <option value="1">Side Nav</option>
+                    <option value="2">Top-Down Nav</option>
+                    <option value="3">Nav Search</option>
+                </select>
+            </div>
+            <span class="Code-title">HTML Code</span>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Basic-Nav Code -->
+                    <span id="basic-nav-code">
+
+                        &lt;div id="basic-nav"><br>
+                        &lt;span class="nav-logo">&lt;a href="#">&lt;img src="Images/nav-logo.png"
+                        alt="logo">&lt;/a>&lt;/span><br>
+                        &lt;ul id="basic-nav-list" class="nav-list"><br>
+                        &lt;li>&lt;a href="#"> Home&lt;/a>&lt;/li><br>
+                        &lt;li> &lt;a href="#"> Features&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> Pricing&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> About&lt;/a>&lt;/li><br>
+                        &lt;/ul><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Side Navbar -->
+                    <span id="side-navigation-code">
+                        &lt;div id="side-nav"><br>
+                        &lt;div id="nav-top"><br>
+                        &lt;span class="ham-switch" onclick="slideNav()">&lt;i
+                        class="fa-solid fa-bars ham">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div id="nav-side"><br>
+                        &lt;ul id="side-nav-list"><br>
+                        &lt;span class="nav-logo">&lt;a href="#">&lt;img src="Images/nav-logo.png" alt="logo"
+                        id="side-logo">&lt;/a>&lt;/span><br>
+                        &lt;li>&lt;a href="#"> Home&lt;/a>&lt;/li><br>
+                        &lt;li> &lt;a href="#"> Features&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> Pricing&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> About&lt;/a>&lt;/li><br>
+                        &lt;/ul><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Top-Down Navbar -->
+                    <span id="top-navigation-code">
+                        &lt;div id="top-nav"><br>
+                        &lt;div id="nav-top"><br>
+                        &lt;span class="ham-switch" onclick="downNav()">&lt;i class="fa-solid fa-bars
+                        ham">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div id="nav-down"><br>
+                        &lt;ul id="down-nav-list"><br>
+                        &lt;span class="nav-logo">&lt;a href="#">&lt;img src="Images/nav-logo.png" alt="logo"
+                        id="side-logo">&lt;/a>&lt;/span><br>
+                        &lt;li>&lt;a href="#"> Home&lt;/a>&lt;/li><br>
+                        &lt;li> &lt;a href="#"> Features&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> Pricing&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> About&lt;/a>&lt;/li><br>
+                        &lt;span id="closeNav" onclick="closeNav()">&lt;i class="fa-solid
+                        fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/ul><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Search-Nav Code -->
+                    <span id="search-nav-code">
+
+                        &lt;div id="search-nav"><br>
+                        &lt;ul id="search-nav-list" class="nav-list"><br>
+                        &lt;span class="nav-logo">&lt;a href="#">&lt;img src="Images/nav-logo.png"
+                        alt="logo">&lt;/a>&lt;/span><br>
+                        &lt;li>&lt;a href="#"> Home&lt;/a>&lt;/li><br>
+                        &lt;li> &lt;a href="#"> Features&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> Pricing&lt;/a>&lt;/li><br>
+                        &lt;li>&lt;a href="#"> About&lt;/a>&lt;/li><br>
+                        &lt;/ul><br>
+                        &lt;div><br>
+                        &lt;input type="search" id="search-page" placeholder="Search..."><br>
+                        &lt;span id="searchNav">&lt;i class="fa-solid fa-magnifying-glass"<br>
+                        onclick="showSearch()">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+            <span class="Code-title">JavaScript Code</span>
+            <p>Paste the link below the &lt;/body> tag to use JavaScript Code. </p>
+            <div class="JS-code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-JS-code">
+                    <span id="side-nav-JS">
+                        var side_nav = 1;<br>
+                        //Demonstration<br>
+                        function slideNav() {<br>
+                        if (side_nav == 0) {<br>
+                        document.getElementById('nav-side').style.width = "25rem";<br>
+                        document.getElementById('side-nav-list').style.display = "flex";<br>
+                        side_nav = 1;<br>
+                        }<br>
+                        else {<br>
+                        document.getElementById('nav-side').style.width = "0";<br>
+                        document.getElementById('side-nav-list').style.display = "none";<br>
+                        side_nav = 0;<br>
+                        }<br>
+                        }<br>
+                    </span>
+                    <span id="top-nav-JS">
+                        var top_nav = 0;<br>
+                        document.getElementById('nav-down').style.height = "0%";<br>
+                        document.getElementById('down-nav-list').style.display = "none";<br>
+                        function downNav() {<br>
+                            if (top_nav == 0) {<br>
+                                document.getElementById('nav-down').style.height = "92%";<br>
+                                document.getElementById('down-nav-list').style.display = "flex";<br>
+                                top_nav = 1;<br>
+                            }<br>
+                        }<br>
+                        function closeNav() {<br>
+                            if (top_nav == 1) {<br>
+                                document.getElementById('nav-down').style.height = "0%";<br>
+                            document.getElementById('down-nav-list').style.display = "none";<br>
+                            top_nav = 0;<br>
+                        }<br>
+                    }<br>
+                </span>
+                <span id="search-nav-JS">
+                        var search_nav = 0;<br>
+                        function showSearch() {<br>
+                            if (search_nav == 0) {<br>
+                            document.getElementById('search-page').style.width = "25rem";<br>
+                            search_nav = 1;<br>
+                            }<br>
+                            else {<br>
+                            search_nav = 0;<br>
+                            hideSearch();<br>
+                            }<br>
+                            }<br>
+                            function hideSearch() {<br>
+                            document.getElementById('search-page').style.width = "0";<br>
+                            }<br>
+                    </span>
+                    
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboardJS()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+        </footer>
+    </div>
+    <script src="JS/navbar.js"></script>
+</body>
+
+</html>

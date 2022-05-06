@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Modal</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #modals {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont">
+            <span class="heading">Modal</span>
+            <p class="component-description">
+                A modal (also called a modal window or lightbox) is a web page element that displays in front of and
+                deactivates all other page content. To return to the main content, the user must engage with the modal
+                by completing an action or by closing it.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <!-- Component Title -->
+            <span id="basic-modal-title" class="sub-heading">Basic Modal</span>
+            <span id="informative-modal-title" class="sub-heading">Informative Modal</span>
+            <span id="success-modal-title" class="sub-heading">Success Modal</span>
+            <span id="subscribe-modal-title" class="sub-heading">Subscribe Modal</span>
+            <span id="advertise-modal-title" class="sub-heading">Advertise Modal</span>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Basic Modal -->
+                    <div id="basic-modal-demo" class="modal">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Warning!</h2>
+                            <span id="close-modal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <p class="modal-message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+                            ratione
+                            repellat quas est mollitia in adipisci aperiam alias ad ex non qui ea officia cumque harum,
+                            soluta
+                            reprehenderit, veritatis voluptates!</p>
+                        <div class="modal-footer">
+                            <button class="cancel" onclick="closeModal()">Cancel</button>
+                            <button class="accept">Accept</button>
+                        </div>
+                    </div>
+                    <!-- Informative Modal -->
+                    <div id="informative-modal-demo" class="modal">
+                        <div class="modal-header">
+
+                            <span id="close-modal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <p class="modal-message"><img src="images/mail.png" alt="" class="modal-image"></p>
+                        <div class="modal-text">
+                            <h2 class="modal-Text">New: Follow-up Emails</h2>
+                            <h4 class="modal-Text">Automatically send your invitees a follow-up email after you meet.
+                            </h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="accept modal-cng">Learn More</button>
+                            <button class="cancel" onclick="closeModal()">Got It</button>
+                        </div>
+                    </div>
+                    <!-- Success Modal -->
+                    <div id="success-modal-demo" class="modal">
+                        <div class="modal-header">
+
+                            <span id="close-modal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <p class="modal-message"><img src="images/success.gif" alt="" class="modal-image"></p>
+                        <div class="modal-text">
+                            <h2 class="modal-Text">Payment Successful !</h2>
+                            <h4 class="modal-Text">Your transaction ID is TRX0854632ID</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="cancel" onclick="closeModal()">Close</button>
+                        </div>
+                    </div>
+                    <!-- Subscribe Modal -->
+                    <div id="subscribe-modal-demo" class="modal">
+                        <div class="modal-content"
+                            style="background: url('images/back.png') center center  !important;">
+                            <div class="modal-header">
+
+                                <span id="close-modal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                            <div class="modal-text">
+                                <h2 class="modal-Text">Newsletter</h2>
+                                <p class="modal-message"><img src="images/mail2.png" alt="" class="modal-image"></p>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <input type="email" class="subscriber" placeholder="E-mail address" required>
+                            <button class="accept" onclick="closeModal()">Subscribe</button>
+                        </div>
+                    </div>
+                    <!-- Advertise Modal -->
+                    <div id="advertise-modal-demo" class="modal">
+                        <div class="modal-content" style="background: url('images/summer1.jpg') center center">
+                            <span class="advertise-title">SUMMER</span>
+                            <span class="advertise-subtitle">Sale</span>
+                            <div class="advertise-discount">
+                                <p class="discount">40%<sup>OFF</sup></p>
+                            </div>
+                        </div>
+                        <div class="modal-footer"
+                            style="background: url('images/summer2.png') center center;background-size:100% 100%;">
+                            <button class="accept" onclick="closeModal()">SHOP NOW</button>
+                            <span id="close-modal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+                <select name="select-component" id="component-select" onchange="showDiv(this)">
+                    <option value="0">Basic Modal</option>
+                    <option value="1">Informative Modal</option>
+                    <option value="2">Success Modal</option>
+                    <option value="3">Subscribe Modal</option>
+                    <option value="4">Advertise Modal</option>
+                </select>
+            </div>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Basic Modal -->
+                    <span id="basic-modal-code">
+                        &lt;div id="basic-modal" class="modal"><br>
+                        &lt;div class="modal-header"><br>
+                        &lt;h2 class="modal-title">Warning!&lt;/h2><br>
+                        &lt;span id="close-modal" onclick="closeModal()">&lt;i class="fa-solid
+                        fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;p class="modal-message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+                        ratione
+                        repellat quas est mollitia in adipisci aperiam alias ad ex non qui ea officia cumque harum,
+                        soluta
+                        reprehenderit, veritatis voluptates!&lt;/p><br>
+                        &lt;div class="modal-footer"><br>
+                        &lt;button class="cancel" onclick="closeModal()">Cancel&lt;/button><br>
+                        &lt;button class="accept">Accept&lt;/button><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Informative Modal -->
+                    <span id="informative-modal-code">
+                        &lt;div id="informative-modal" class="modal"><br>
+                        &lt;div class="modal-header"><br>
+                        &lt;span id="close-modal" onclick="closeModal()">&lt;i class="fa-solid
+                        fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;p class="modal-message">&lt;img src="images/mail.png" alt="" class="modal-image">&lt;/p><br>
+                        &lt;div class="modal-text"><br>
+                        &lt;h2 class="modal-Text">New: Follow-up Emails&lt;/h2><br>
+                        &lt;h4 class="modal-Text">Automatically send your invitees a follow-up email after you meet.<br>
+                        &lt;/h4><br>
+                        &lt;/div><br>
+                        &lt;div class="modal-footer"><br>
+                        &lt;button class="accept modal-cng">Learn More&lt;/button><br>
+                        &lt;button class="cancel" onclick="closeModal()">Got It&lt;/button><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Success Modal -->
+                    <span id="success-modal-code">
+                        &lt;div id="success-modal" class="modal"><br>
+                        &lt;div class="modal-header"><br>
+                        &lt;span id="close-modal" onclick="closeModal()">&lt;i class="fa-solid
+                        fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;p class="modal-message">&lt;img src="images/success.gif" alt=""
+                        class="modal-image">&lt;/p><br>
+                        &lt;div class="modal-text"><br>
+                        &lt;h2 class="modal-Text">Payment Successful !&lt;/h2><br>
+                        &lt;h4 class="modal-Text">Your transaction ID is TRX0854632ID&lt;/h4><br>
+                        &lt;/div><br>
+                        &lt;div class="modal-footer"><br>
+                        &lt;button class="cancel" onclick="closeModal()">Close&lt;/button><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Subscribe Modal -->
+                    <span id="subscribe-modal-code">
+                        &lt;div id="subscribe-modal" class="modal"><br>
+                        &lt;div class="modal-content" style="background: url('images/back.png') center center
+                        !important;"><br>
+                        &lt;div class="modal-header"><br>
+                        &lt;span id="close-modal" onclick="closeModal()">&lt;i class="fa-solid
+                        fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;div class="modal-text"><br>
+                        &lt;h2 class="modal-Text">Newsletter&lt;/h2><br>
+                        &lt;p class="modal-message">&lt;img src="images/mail2.png" alt=""
+                        class="modal-image">&lt;/p><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                        &lt;div class="modal-footer"><br>
+                        &lt;input type="email" class="subscriber" placeholder="E-mail address" required><br>
+                        &lt;button class="accept" onclick="closeModal()">Subscribe&lt;/button><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Advertise Modal -->
+                    <span id="advertise-modal-code">
+                        &lt;div id="advertise-modal" class="modal"><br>
+                        &lt;div class="modal-content" style="background: url('images/summer1.jpg') center center"><br>
+                        &lt;span class="advertise-title">SUMMER&lt;/span><br>
+                        &lt;span class="advertise-subtitle">Sale&lt;/span><br>
+                        &lt;div class="advertise-discount"><br>
+                        &lt;p class="discount">40%&lt;sup>OFF&lt;/sup>&lt;/p><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                        &lt;div class="modal-footer"
+                        style="background: url('images/summer2.png') center center;background-size:100% 100%;"><br>
+                        &lt;button class="accept" onclick="closeModal()">SHOP NOW&lt;/button><br>
+                        &lt;span id="close-modal" onclick="closeModal()">&lt;i class="fa-solid
+                        fa-xmark">&lt;/i>&lt;/span><br>
+                        &lt;/div><br>
+                        &lt;/div><br>
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Ayush Raj</p>
+
+        </footer>
+    </div>
+    <script src="JS/modal.js"></script>
+</body>
+
+</html>

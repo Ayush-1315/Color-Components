@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Snackbar</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <style>
+        #snack {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+                
+                
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont">
+            <span class="heading">Snackbar</span>
+            <p class="component-description">
+                Snackbars provide brief feedback about an operation through a message at the bottom of the screen. Snackbars contain a single line of text directly related to the operation performed. They may contain a text action, but no icons. Toasts (Android only) are primarily used for system messaging.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <div class="preview">
+                <div class="content-preview">
+                    <div id="Snack-bar">
+                        <p class="message">This is an example of Snack bar.</p>
+                        <div class="snack-button">
+                          <a href="#">RETRY</a>
+                          <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <button id="preview-show" onclick="show()"><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;Preview</button>
+            <p class="component-description">
+
+            </p>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <span id="snack-code">
+                        &lt;div id="Snack-bar"&gt;<br>
+                            &lt;p class="message"&gt;This is an example of Snack bar.&lt;/p&gt;<br>
+                            &lt;div class="snack-button"&gt;<br>
+                              &lt;a href="#"&gt;RETRY&lt;/a&gt;<br>
+                              &lt;button id="close"&gt;&lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;&lt;/button&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+            <div id="show">
+                <div id="Snack-bar">
+                    <p class="message">This is an example of Snack bar.</p>
+                    <div class="snack-button">
+                      <a href="#">RETRY</a>
+                      <button id="close" onclick="closeSnack()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+        </footer>
+    </div>
+    <script src="JS/snackbar.js"></script>
+</body>
+
+</html>

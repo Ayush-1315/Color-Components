@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Avatars</title>
+    <script src="https://kit.fontawesome.com/80d8516d34.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #avatars {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars" ></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont"id="page-cont">
+            <span class="heading">Avatars</span>
+            <p class="component-description">
+                An avatar is a representation of who we are or our fictional character. When designing websites, you may need images of people. It might be for a section for the staff or some other area of the website. 
+                <br>
+                <br>
+                <span>
+                    Ex:- Social Media Websites, Coding Platforms, Online Gaming sites, Mail Composing sites  etc.
+                </span>
+            </p>
+            <!-- Component Title -->
+            <span  id="tablet-des" class="sub-heading">Tablet Avatar</span>
+            <span id="Round-ava-des" class="sub-heading">Round Avatar</span>
+            <span id="Img-ava-des" class="sub-heading">Image Avatar</span>
+            <span id="Border-ava-des" class="sub-heading">Border Avatar</span>
+            <span id="Hover-ava-des" class="sub-heading">Hover Avatar</span>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Tablet Avatar -->
+                    <div id="Tablet-demo">
+                        <div class="ava">
+                            <span class="text">AR</span>
+                        </div>
+                        <div class="ava">
+                            <i class="fa fa-solid fa-circle busy"></i>
+                            <span class="text">AR</span>
+                        </div>
+                        <div class="ava">
+                            <i class="fa fa-solid fa-circle offline"></i>
+                            <span class="text">AR</span>
+                        </div>
+                        <div class="ava">
+                            <i class="fa fa-solid fa-circle online"></i>
+                            <span class="text">AR</span>
+                        </div>
+                    </div>
+                    <!-- Rpund Avatar -->
+                    <div id="Round-ava-demo">
+                        <div class="ava ">
+                            <span class="text round">AR</span>
+                        </div>
+                        <div class="ava ">
+                            <i class="fa fa-solid fa-circle busy"></i>
+                            <span class="text round">AR</span>
+                        </div>
+                        <div class="ava ">
+                            <i class="fa fa-solid fa-circle offline"></i>
+                            <span class="text round">AR</span>
+                        </div>
+                        <div class="ava ">
+                            <i class="fa fa-solid fa-circle online"></i>
+                            <span class="text round">AR</span>
+                        </div>
+                    </div>
+                    <!-- Image Avatar -->
+                    <div id="Img-ava-demo">
+                        <div class="ava ">
+                            <img src="Images/avatar-1.jpg" alt="avatar-1.jpg" class="img-ava">
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-2.jpg" alt="avatar-2.jpg" class="img-ava">
+                            <i class="fa fa-solid fa-circle busy1"></i>
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-3.jpg" alt="avatar-3.jpg" class="img-ava">
+                            <i class="fa fa-solid fa-circle offline1"></i>
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-4.jpg" alt="avatar-4.jpg" class="img-ava">
+                            <i class="fa fa-solid fa-circle online1"></i>
+                        </div>
+            
+                    </div>
+                    <!-- Border Avatar -->
+                    <div id="Border-ava-demo">
+                        <div class="ava ">
+                            <img src="Images/avatar-1.jpg" alt="avatar-1.jpg" class="img-ava border">
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-2.jpg" alt="avatar-2.jpg" class="img-ava border">
+                            <i class="fa fa-solid fa-circle busy1"></i>
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-3.jpg" alt="avatar-3.jpg" class="img-ava border">
+                            <i class="fa fa-solid fa-circle offline1"></i>
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-4.jpg" alt="avatar-4.jpg" class="img-ava border">
+                            <i class="fa fa-solid fa-circle online1"></i>
+                        </div>
+            
+                    </div>
+                    <!-- Hover Avatar -->
+                    <div id="Hover-ava-demo">
+                        <div class="ava ">
+                            <img src="Images/avatar-1.jpg" alt="avatar-1.jpg" class="hover-border img-ava">
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-2.jpg" alt="avatar-2.jpg" class="hover-border img-ava">
+                            <i class="fa fa-solid fa-circle busy1"></i>
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-3.jpg" alt="avatar-3.jpg" class="hover-border img-ava">
+                            <i class="fa fa-solid fa-circle offline1"></i>
+                        </div>
+                        <div class="ava ">
+                            <img src="Images/avatar-4.jpg" alt="avatar-4.jpg" class="hover-border img-ava">
+                            <i class="fa fa-solid fa-circle online1"></i>
+                        </div>
+            
+                    </div>
+                </div>
+                    <select name="select-component" id="component-select" onchange="showDiv(this)">
+                        <option value="0">Tablet Avatar</option>
+                        <option value="1">Round Avatar</option>
+                        <option value="2">Images Avatar</option>
+                        <option value="3">Border Avatar</option>
+                        <option value="4">Hover Avatar</option>
+                    </select>
+                  
+                </select>
+            </div>
+            <span class="Code-title">HTML Code</span>
+            <!-- Code Copy Block -->
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Tablet Avatar Code -->
+                    <span id="tablet-code">
+                        <span class="comments">&lt;!-- Normal Tablet Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="text" &gt; AR &lt;/span&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Busy Tablet Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle busy" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="text" &gt;AR&lt;/span &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Offline Tablet Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle offline" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="text" &gt;AR&lt;/span &gt;<br>
+                        &lt;/div&gt; <br>
+                        <span class="comments">&lt;!-- Online Tablet Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle online" &gt;&lt;/i
+                        &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="text" &gt;AR&lt;/span &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;
+                        &nbsp;&nbsp;&nbsp;<br>&lt;/div &gt;
+                    </span>
+                    <!-- Round Avatar Code -->
+                    <span id="Round-ava-code">
+                        <span class="comments">&lt;!-- Normal Round Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="text round" &gt; AR &lt;/span&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Busy Round Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle busy" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="text round" &gt;AR&lt;/span &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Offline Round Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle offline" &gt;&lt;/i &gt;<br>
+                        &lt;span class="text round" &gt;AR&lt;/span &gt;<br>
+                        &lt;/div&gt; <br>
+                        <span class="comments">&lt;!-- Online Round Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle online" &gt;&lt;/i
+                        &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="text round" &gt;AR&lt;/span &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;
+                        &nbsp;&nbsp;&nbsp;<br>&lt;/div &gt;
+                    </span>
+                    <!-- Image Avatar Code -->
+                    <span id="Img-ava-code">
+                        <span class="comments">&lt;!-- Normal Image Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-1.jpg" alt="avatar-1.jpg" class="img-ava"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Busy Image Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle busy" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-1.jpg" alt="avatar-2.jpg" class="img-ava"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Offline Image Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle offline" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-3.jpg" alt="avatar-3.jpg" class="img-ava"&gt;<br>
+                        &lt;/div&gt; <br>
+                        <span class="comments">&lt;!-- Online Image Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle online" &gt;&lt;/i
+                        &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-4.jpg" alt="avatar-4.jpg" class="img-ava"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;
+                        &nbsp;&nbsp;&nbsp;<br>&lt;/div &gt;
+                    </span>
+                    <!-- Border Avatar Code -->
+                    <span id="Border-ava-code">
+                        <span class="comments">&lt;!-- Normal Border Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-1.jpg" alt="avatar-1.jpg" class="img-ava border"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Busy Image Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle busy" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-1.jpg" alt="avatar-2.jpg" class="img-ava border"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Offline Image Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle offline" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-3.jpg" alt="avatar-3.jpg" class="img-ava border"&gt;<br>
+                        &lt;/div&gt; <br>
+                        <span class="comments">&lt;!-- Online Image Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle online" &gt;&lt;/i
+                        &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-4.jpg" alt="avatar-4.jpg" class="img-ava border"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;
+                        &nbsp;&nbsp;&nbsp;<br>&lt;/div &gt;
+                    </span>
+                    <!-- Hover Avatar Code -->
+                    <span id="Hover-ava-code">
+                        <span class="comments">&lt;!-- Normal Hover Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-1.jpg" alt="avatar-1.jpg" class="img-ava hover-border"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Busy Hover Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle busy" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-1.jpg" alt="avatar-2.jpg" class="img-ava hover-border"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;<br>
+                        <span class="comments">&lt;!-- Offline Hover Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle offline" &gt;&lt;/i &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-3.jpg" alt="avatar-3.jpg" class="img-ava hover-border"&gt;<br>
+                        &lt;/div&gt; <br>
+                        <span class="comments">&lt;!-- Online Hover Avatar--&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="ava" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-solid fa-circle online" &gt;&lt;/i
+                        &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Images/avatar-4.jpg" alt="avatar-4.jpg" class="img-ava hover-border"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;/div &gt;
+                        &nbsp;&nbsp;&nbsp;<br>&lt;/div &gt;
+                    </span>
+                    
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All rights are reserved to Color Component UI</p>
+
+        </footer>
+    </div>
+    <script src="JS/avatars.js"></script>
+</body>
+
+</html>

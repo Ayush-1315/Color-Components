@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Buttons</title>
+    <script src="https://kit.fontawesome.com/80d8516d34.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #btn {
+            background-color: #3a776c;
+            background: rgba(0,0,0,0.5);
+    backdrop-filter:  blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars"></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+
+
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="https://bit.ly/3GOvMbM" /></a>
+                </div>
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="login"><a href="Login.html"> Login Forms</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont">
+            <span class="heading">Buttons</span>
+            <p class="component-description">
+                Buttons are used on forms, website homepages, dialog boxes, and toolbars. It is important to
+                differentiate between buttons and links. Buttons are used when you want a user to act (submit, cancel,
+                delete) and links are used to direct users to other pages (about me, read more).
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <!-- Component Title -->
+            <span id="normal-btn-title" class="sub-heading">Normal Button</span>
+            <span id="color-btn-title" class="sub-heading">Color Button</span>
+            <span id="primary-btn-title" class="sub-heading">Primary Button</span>
+            <span id="glowing-btn-title" class="sub-heading">Glowing Button</span>
+            <span id="block-btn-title" class="sub-heading">Block Button</span>
+            <span id="download-btn-title" class="sub-heading">Download Button</span>
+            <div class="preview">
+                <div class="content-preview">
+                    <!-- Normal buttons -->
+                    <div class="normalbtn" id="normalbtn">
+                        <button class="red-bt">Stop</button>
+                        <button class="blue-bt">Retry</button>
+                        <button class="green-bt">Start</button>
+                        <button class="yellow-bt">Close</button>
+                    </div>
+                    <!-- color Buttons -->
+                    <div class="colorbtn" id="colorbtn">
+                        <button class="red-bt">Stop</button>
+                        <button class="blue-bt">Retry</button>
+                        <button class="green-bt">Start</button>
+                        <button class="yellow-bt">Close</button>
+                    </div>
+                    <!-- Primary Buttons -->
+                    <div class="primarybtn" id="primarybtn">
+                        <button>Stop</button>
+                        <button>Retry</button>
+                        <button>Start</button>
+                        <button>Close</button>
+                    </div>
+                    <!-- Glowing Buttons -->
+                    <div class="glowbtn" id="glowbtn">
+                        <button class="red-bt">Stop</button>
+                        <button class="blue-bt">Retry</button>
+                        <button class="green-bt">Start</button>
+                        <button class="yellow-bt">Close</button>
+                    </div>
+                    <!-- Block Buttons -->
+                    <div class="blockbtn" id="blockbtn">
+                        <button class="blockbtt">Retry</button>
+                        <button class="blockbtt">Close</button>
+                    </div>
+                    <!-- Download Button -->
+                    <div class="downloadbtn" id="downloadbtn">
+                        <button class="downbtt"><i class="fa fa-download fa-lg"></i> DOWNLOAD</button>
+                    </div>
+                </div>
+                <select name="select-component" id="component-select" onchange="showDiv(this)">
+                    <option value="0">Normal Button</option>
+                    <option value="1">Color Button</option>
+                    <option value="2">Primary Button</option>
+                    <option value="3">Glowing Button</option>
+                    <option value="4">Block Button</option>
+                    <option value="5">Download Button</option>
+                </select>
+
+            </div>
+            <p class="component-description">
+
+            </p>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                    <!-- Normal buttons -->
+                    <span id="normal-btn-code">
+                        &lt;div class="normalbtn"><br>
+                        &lt;button class="red-bt">Stop&lt;/button><br>
+                        &lt;button class="blue-bt">Retry&lt;/button><br>
+                        &lt;button class="green-bt">Start&lt;/button><br>
+                        &lt;button class="yellow-bt">Close&lt;/button><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- color Buttons -->
+                    <span id="color-btn-code">
+                        &lt;div class="colorbtn"><br>
+                        &lt;button class="red-bt">Stop&lt;/button><br>
+                        &lt;button class="blue-bt">Retry&lt;/button><br>
+                        &lt;button class="green-bt">Start&lt;/button><br>
+                        &lt;button class="yellow-bt">Close&lt;/button><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Primary Buttons -->
+                    <span id="primary-btn-code">
+                        &lt;div class="primarybtn"><br>
+                        &lt;button>Stop&lt;/button><br>
+                        &lt;button>Retry&lt;/button><br>
+                        &lt;button>Start&lt;/button><br>
+                        &lt;button>Close&lt;/button><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Glowing Buttons -->
+                    <span id="glowing-btn-code">
+                        &lt;div class="glowbtn"><br>
+                        &lt;button class="red-bt">Stop&lt;/button><br>
+                        &lt;button class="blue-bt">Retry&lt;/button><br>
+                        &lt;button class="green-bt">Start&lt;/button><br>
+                        &lt;button class="yellow-bt">Close&lt;/button><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Block Buttons -->
+                    <span id="block-btn-code">
+                        &lt;div class="blockbtn" id="blockbtn"><br>
+                        &lt;button class="blockbtt">Retry&lt;/button><br>
+                        &lt;button class="blockbtt">Close&lt;/button><br>
+                        &lt;/div><br>
+                    </span>
+                    <!-- Download Button -->
+                    <span id="download-btn-code">
+                        &lt;div class="downloadbtn"><br>
+                        &lt;button class="downbtt">&lt;i class="fa fa-download fa-lg">&lt;/i> DOWNLOAD&lt;/button><br>
+                        &lt;/div><br>
+                    </span>
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+        </footer>
+    </div>
+    <script src="JS/buttons.js"></script>
+</body>
+
+</html>
