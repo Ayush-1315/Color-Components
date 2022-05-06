@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root{
+    --message:2rem;
+    --message-font:'Roboto Condensed', sans-serif;
+    --retry-btn:1.5rem;
+}
+#Snack-bar{
+    width:30vw;
+    background-color: rgb(48, 35, 35);
+    height:5rem;    
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:8px;
+}
+.message{
+    color:white;
+    font-size:var(--message);
+    font-family: var(--message-font);   
+}
+.snack-button{
+    font-size:var(--retry-btn);
+    font-family: var(--message-font);   
+}
+.snack-button a{
+    display: inline-block;
+    padding:10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.snack-button a:hover{
+    background-color: rgb(201, 103, 201);
+}
+#close{
+    border:none;
+    background-color: transparent;
+    color:white;
+    width:3rem !important;
+    height:3rem !important;
+    padding:5px 10px;
+    border-radius: 50%;
+    font-size: var(--message);
+    cursor:pointer;
+    margin:0 10px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#close:hover{
+    background-color: grey;
+}
+
+/* Preview  */
+#show{
+    display: inline-block;
+    position: fixed;
+    top:10vh ;
+    z-index: 2;
+    display:none;
+    font-family: var(--message-font);
+    font-weight: bold;
+}
+#preview-show{
+    background: linear-gradient(red,yellow);
+    display:inline-block;
+    padding:1.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: var(--message);  
+    cursor: pointer;
+    border:none;
+    border:1px solid black;
+    transition:all 0.3s;
+    width:fit-content;
+    height:5rem;
+}
+#preview-show:hover{
+    box-shadow:2px 2px 2px 2px grey,-2px -2px 2px 2px grey;
+
+}

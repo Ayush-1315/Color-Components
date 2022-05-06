@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+/* Components */
+#responsive-img{
+    display: inline-block;
+    padding:1rem;
+    border-radius: 5px;
+    height:auto;
+    width: 60%;
+}
+#Round{
+    margin:1rem 0rem;
+    border-radius: 70%;
+    max-width:25rem;
+    height:25rem ;  
+    display:none;
+}
+#round-shadow{
+    width:30vw;
+    height:30vh;
+}
+#round-border{
+    margin:1rem 0rem;
+    border-radius: 70%;
+    border:1rem solid rgb(49, 83, 196);
+    max-width:25rem;
+    height:25rem ;  
+    display:none;
+}
+#shadow-img{
+    display: inline-block;
+    height:auto;
+    border-radius: 5px;
+    width:60%;
+    box-shadow: 2px 2px 4px black, -2px -2px 4px black;
+    display:none;
+}
+#hover-img{
+    display: inline-block;
+    border-radius: 5px;
+    height:auto;
+    width: 60%;  
+    cursor: pointer;    
+    transition:all 0.2s;
+    display: none;
+}
+#hover-img:hover{
+        transform: scale(1.05);
+        opacity: 0.8;
+        box-shadow: 2px 2px 4px black, -2px -2px 4px black;
+}
+/* COmponent Descriptions */
+#round-des{
+    display:none;
+}
+#round-border-des
+{
+    display:none;
+}
+#shadow-des
+{
+    display:none;
+}
+#hover-des{
+    display:none;
+}
+/* Component Codes */
+#round-code{
+    display:none;
+}
+#round-border-code{
+    display:none;
+}
+#shadow-img-code{
+    display:none;
+}
+#hover-img-code{
+    display:none;
+}
