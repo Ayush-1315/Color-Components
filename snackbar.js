@@ -1,6 +1,6 @@
 var snack=document.getElementById('show');
 function show(){
-    snack.style.display="block";
+    snack.style.display="flex";
     setTimeout(()=>{
         snack.style.display="none";
     },5000);
