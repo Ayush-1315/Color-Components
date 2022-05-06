@@ -349,9 +349,7 @@ pre{
     :root{
         --font-large:3rem;
     }
-    #web-name{
-        display:none !important;
-    }
+
   .preview{
       width: 100%;
   }
