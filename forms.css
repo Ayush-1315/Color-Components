@@ -99,6 +99,7 @@ label{
 #travel-log input[type="submit"],#travel-log-demo input[type="submit"],#Login-Signup input[type="submit"],#Login-Signup-demo input[type="submit"] {
     width: 60%;
     cursor: pointer;
+    margin:15px 0;
     border: 5px solid;
     border-image-slice: 30%;
     border-width: 3px;
@@ -190,7 +191,7 @@ label{
 
 #Login-Signup #login input[type="submit"],#Login-Signup-demo #login input[type="submit"]{
     background-color: transparent;
-    margin: 5px 0;
+    margin: 15px 0;
     border-radius: 0px;
     color: black;
     width: 10%;
