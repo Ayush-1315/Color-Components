@@ -169,6 +169,7 @@ color:whitesmoke;
     font-family:var(--sub-font);
     display:block;
     padding: 1rem 0;
+    text-align: center;
 }
 .preview{   
     display:flex;
@@ -349,7 +350,6 @@ pre{
     :root{
         --font-large:3rem;
     }
-
   .preview{
       width: 100%;
   }
@@ -357,6 +357,9 @@ pre{
     width:100%;
 }
   .JS-code{
+    width:100%;
+}
+.component-description{
     width:100%;
 }
 #copy-code{
@@ -403,6 +406,9 @@ pre{
         position: relative;
         font-size:1.5rem;
     }
+    .component-description{
+        width:100%;
+    }
     #component-select{
         width:180px;
        
@@ -436,6 +442,7 @@ pre{
     #side-list{
         display:none;
     }
+    
 
 }
 @media (max-height:480px){
