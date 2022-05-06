@@ -43,7 +43,7 @@ label{
 
 #basic-log input[type="submit"],#basic-log-demo input[type="submit"] {
     background-color: blue;
-    margin: 15px 15px;
+    margin: 15px 0px;
     color: white;
     width: 100%;
 }
