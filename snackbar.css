@@ -18,8 +18,8 @@
 }
 .message{
     color:white;
-    font-size:var(--message);
-    font-family: var(--message-font);   
+    font-size:var(--message) !important;
+    font-family: var(--message-font) !important;   
 }
 .snack-button{
     font-size:var(--retry-btn);
@@ -55,11 +55,16 @@
 
 /* Preview  */
 #show{
-    display: inline-block;
+   display: flex;
+    justify-content: center;
+    align-self: center;
     position: fixed;
-    top:10vh ;
+    top:15vh ;
+    margin:auto;
+    text-align: center; 
     z-index: 2;
     display:none;
+    width:80%;
     font-family: var(--message-font);
     font-weight: bold;
 }
@@ -78,5 +83,52 @@
 }
 #preview-show:hover{
     box-shadow:2px 2px 2px 2px grey,-2px -2px 2px 2px grey;
-
+}
+@media (min-width:280px) and (max-width:320px){
+    :root{
+        --message:1.3rem;
+    }
+    #Snack-bar{width:100%;}
+}
+@media (min-width:321px) and (max-width:480px){
+    :root{
+        --message:1.3rem;
+    }
+    #Snack-bar{width:100%;}
+}
+@media (min-width:481px) and (max-width:510px){
+    :root{
+        --message:1.3rem;
+    }
+    #Snack-bar{width:100%;}
+}
+@media (min-width:511px) and (max-width:610px){
+    :root{
+        --message:1.3rem;
+    }
+    #Snack-bar{width:80%;}
+}
+@media (min-width:611px) and (max-width:766px){
+    :root{
+        --message:1.3rem;
+    }
+    #Snack-bar{width:60%;}
+}
+@media (min-width:767px) and (max-width:1024px){
+    :root{
+        --message:2rem;
+    }
+    #Snack-bar{width:60%;}
+}
+@media (min-width: 1025px)and (max-width:1200px){
+    :root{
+        --message:2rem;
+    }
+    #Snack-bar{width:60%;}
+}
+@media (min-width: 1201px){
+    :root{
+        --message:2rem;
+    }
+    #Snack-bar{width:50%;}
 }
