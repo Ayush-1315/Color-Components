@@ -114,7 +114,11 @@
     bottom:35%;
     color:white;
 }
-
+.overtext{
+    position: absolute;
+    top:2.5rem;
+    color:whitesmoke;
+}
 #overtext-card>.card-description{
     margin:1rem;
 }
